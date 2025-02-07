@@ -3,6 +3,6 @@ This is the repository for our group project.
 
 Members: 
 - Caoimhe O'Brien (C00297178)
-- Lee Lindsay (C00...)
+- Lee Lindsay (C00300670)
 - Aoife Leahy (C00296873)
 - Natalia Ryl (C00294480) 
