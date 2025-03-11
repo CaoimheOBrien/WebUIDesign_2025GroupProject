@@ -11,6 +11,7 @@
         <li><a href="/">Login</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
+        <li><a href="/student_home_page_lr">Aoife Test</a></li>
     </ul>
 </nav>
 
