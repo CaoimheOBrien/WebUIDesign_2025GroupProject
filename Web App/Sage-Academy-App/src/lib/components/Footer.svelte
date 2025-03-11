@@ -8,8 +8,8 @@
         background-color: #343a40;
         color: white;
         text-align: center;
+        
         padding: 1rem;
-        position: fixed;
         bottom: 0;
         width: 100%;
     }
