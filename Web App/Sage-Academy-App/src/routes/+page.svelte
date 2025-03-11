@@ -10,8 +10,8 @@
 
 <!-- Gallery Container -->
 <div class="gallery">
-    <Card title="I'm a Student" description="" />
-    <Card title="I'm a Teacher" description="" />
+    <button button="I'm a Student"  />
+    <button button="I'm a Teacher"  />
 </div>
 
 <style>
@@ -26,19 +26,6 @@
 
 
 
-    /* Highlight the first and last child in the gallery */
-    :global(.gallery > .card:first-child) {
-      /* Emphasize the first card */
-    }
-
-    :global(.gallery > .card:last-child) {
-       /* Emphasize the last card */
-    }
-
-    /* Apply a different background color to even-numbered cards */
-    :global(.gallery > .card:nth-child(even)) {
-       
-    }
 
     /* Apply a hover effect: spotlight effect on the hovered card */
     :global(.gallery > .card:hover) {
