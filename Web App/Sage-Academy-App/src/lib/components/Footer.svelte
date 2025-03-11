@@ -1,5 +1,5 @@
 <footer>
-    <p>&copy; 2025 My Svelte App. All rights reserved.</p>
+    <p>&copy; 2025 Sage Academy. All rights reserved.</p>
 </footer>
 
 

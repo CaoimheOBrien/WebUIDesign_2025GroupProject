@@ -7,8 +7,8 @@
 <header>
     <!-- Logo -->
     <div class="logo">
-        <img src="/logo.png" alt="Website Logo">
-        <h1>My Svelte App</h1>
+        <img src="/logo.jpg" alt="Website Logo">
+        <h1>Sage Academy</h1>
     </div>
 
     <!-- Navigation -->
@@ -23,7 +23,7 @@
         align-items: center;
         justify-content: space-between;
         background-color: var(--primary-color);
-        color: white;
+        color: black;
         padding: 1rem;
     }
 

@@ -8,7 +8,7 @@
     </button>
 
     <ul class:open={isOpen}>
-        <li><a href="/">Home</a></li>
+        <li><a href="/">Login</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
     </ul>
@@ -17,7 +17,7 @@
 <style>
     /* Base Navigation Styling */
     .nav {
-        background-color: #007bff;
+        background-color:rgba(129,193,34,255);
         padding: 1rem;
         text-align: center;
     }
