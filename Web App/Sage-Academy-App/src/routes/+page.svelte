@@ -7,13 +7,11 @@
     });
 </script>
 
-<h1>Welcome to Sage Acedemy</h1>
-<p>This is our homepage .</p>
 
 <!-- Gallery Container -->
 <div class="gallery">
-    <Card title="Im a Student" description="" />
-    <Card title="Im a Teacher" description="." />
+    <Card title="I'm a Student" description="" />
+    <Card title="I'm a Teacher" description="" />
 </div>
 
 <style>
@@ -21,8 +19,8 @@
     .gallery {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px; /* Creates spacing between items */
-        margin-left: 40rem;
+        gap: 70px; /* Creates spacing between items */
+        margin-left: 35rem;
         margin-top: 25rem;
     }
 
@@ -30,11 +28,11 @@
 
     /* Highlight the first and last child in the gallery */
     :global(.gallery > .card:first-child) {
-        border: 3px solid blue; /* Emphasize the first card */
+      /* Emphasize the first card */
     }
 
     :global(.gallery > .card:last-child) {
-        border: 3px solid green; /* Emphasize the last card */
+       /* Emphasize the last card */
     }
 
     /* Apply a different background color to even-numbered cards */
