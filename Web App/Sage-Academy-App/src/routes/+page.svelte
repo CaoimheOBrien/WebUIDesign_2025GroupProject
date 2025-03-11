@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
-    import { Card } from '$lib';
+    import Card from '$lib/components/Card.svelte';
 
     onMount(() => {
         console.log("Home Page Loaded");
