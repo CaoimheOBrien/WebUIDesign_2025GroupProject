@@ -7,17 +7,13 @@
     });
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>This is the homepage of our SvelteKit application.</p>
+<h1>Welcome to Sage Acedemy</h1>
+<p>This is our homepage .</p>
 
 <!-- Gallery Container -->
 <div class="gallery">
-    <Card title="Card 1" description="This is the first card." />
-    <Card title="Card 2" description="This is the second card." />
-    <Card title="Card 3" description="This is the third card." />
-    <Card title="Card 4" description="This is the fourth card." />
-    <Card title="Card 5" description="This is the fifth card." />
-    <Card title="Card 6" description="This is the sixth card." />
+    <Card title="Im a Student" description="" />
+    <Card title="Im a Teacher" description="." />
 </div>
 
 <style>
@@ -26,38 +22,24 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px; /* Creates spacing between items */
-        justify-content: center;
-        margin-top: 2rem;
+        margin-left: 40rem;
+        margin-top: 25rem;
     }
 
-    /* Pseudo-Element: Add Decorative Lines Before Gallery */
-    .gallery::before {
-        content: "Featured Cards";
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
 
-    /* Pseudo-Element: Add Decorative Line After Gallery */
-    .gallery::after {
-        content: "";
-        width: 60%;
-        height: 3px;
-        background: linear-gradient(to right, #007bff, transparent);
-        margin: 2rem auto 0 auto;
-    }
 
     /* Highlight the first and last child in the gallery */
     :global(.gallery > .card:first-child) {
-        border: 3px solid gold; /* Emphasize the first card */
+        border: 3px solid blue; /* Emphasize the first card */
     }
 
     :global(.gallery > .card:last-child) {
-        border: 3px solid crimson; /* Emphasize the last card */
+        border: 3px solid green; /* Emphasize the last card */
     }
 
     /* Apply a different background color to even-numbered cards */
     :global(.gallery > .card:nth-child(even)) {
-        background-color: #ebebeb;
+       
     }
 
     /* Apply a hover effect: spotlight effect on the hovered card */
@@ -78,13 +60,4 @@
         opacity: 0.9; /* Slightly fade them */
     }
 
-    /* Apply a special styling to every third card */
-    :global(.gallery > .card:nth-child(3n)) {
-        border-left: 5px solid #98caff; /* Left accent border */
-    }
-
-    /* Exclude the first and last card from being affected by nth-child styling */
-    :global(.gallery > .card:not(:first-child):not(:last-child)) {
-        border-radius: 18px; /* Softens edges for middle cards */
-    }
 </style>
