@@ -15,7 +15,7 @@
     .card {
         background: white;
         border-radius: 10px; /* Rounded corners */
-        border: 2px solid #016618;
+        border: 4px solid #016618;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         overflow: hidden;
         width: 250px;

@@ -8,12 +8,6 @@
 </script>
 
 
-<!-- Gallery Container -->
-<div class="gallery">
-    <button button="I'm a Student"  />
-    <button button="I'm a Teacher"  />
-</div>
-
 <style>
     /* Flexbox for Dynamic Layout */
     .gallery {
