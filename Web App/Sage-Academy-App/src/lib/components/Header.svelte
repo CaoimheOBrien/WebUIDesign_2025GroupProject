@@ -1,6 +1,6 @@
 <script>
     // import Navigation.svelte from lib folder
-    import { Navigation } from "$lib"
+    import Navigation from '$lib/components/Navigation.svelte';
 </script>
 
 

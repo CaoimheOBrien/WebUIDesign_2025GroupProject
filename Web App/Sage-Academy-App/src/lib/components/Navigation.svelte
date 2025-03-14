@@ -50,7 +50,7 @@
         background: none;
         border: none;
         cursor: pointer;
-        color: white;
+        color: rgb(0, 0, 0);
         position: absolute;
         top: 1rem;
         left: 1rem;

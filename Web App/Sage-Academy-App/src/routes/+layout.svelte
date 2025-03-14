@@ -20,4 +20,5 @@
         padding: 2rem;
         text-align: center;
     }
+    
 </style>
