@@ -38,10 +38,12 @@
         display: inline-block;
     }
 
+
     .nav ul li a {
         color: white;
         text-decoration: none;
         font-weight: bold;
+
     }
 
     /* 🍔 Burger Menu (Hidden on Large Screens) */

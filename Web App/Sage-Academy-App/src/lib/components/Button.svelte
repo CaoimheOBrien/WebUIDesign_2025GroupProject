@@ -14,12 +14,12 @@
     .button {
         background: #a9eba6  ;
         border-radius: 5rem; /* Rounded corners */
-        border: 0.5rem solid #5a9975;
+        border: 0.3rem solid #5a9975;
         overflow: hidden;
         width: 25rem;
         height: 10rem;
         text-align: center;
-        transition: transform 0.5s ease, box-shadow 0.3s ease; /* Smooth transitions */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
     }
 
    
@@ -42,8 +42,11 @@
     }
 
 
-    /* When .card is hovered, expand the decorative effect to 80% */
-    .button:hover .content h2:before {
-        width: 80%; /* Expanded width on hover */
-    }
+    .button:active {
+  background-color: #5a9975;
+  transform: translateY(0.2rem);
+  border: 0.5rem solid #a9eba6;
+}
+
+ 
 </style>

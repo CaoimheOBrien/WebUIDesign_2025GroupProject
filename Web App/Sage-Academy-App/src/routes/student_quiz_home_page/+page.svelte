@@ -20,7 +20,7 @@
   .gallery {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 4rem;
         margin-top: 30rem;
         margin-left: 70rem;
     }
