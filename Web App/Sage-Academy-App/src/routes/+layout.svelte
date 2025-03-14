@@ -1,5 +1,6 @@
 <script>
-    import { Header, Footer } from "$lib";    
+    import Header from '$lib/components/Header.svelte';
+    import Footer from '$lib/components/Footer.svelte';  
 </script>
 
 <!-- Link to global styles -->
@@ -19,4 +20,5 @@
         padding: 2rem;
         text-align: center;
     }
+    
 </style>
