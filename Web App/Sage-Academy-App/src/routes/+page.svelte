@@ -8,15 +8,12 @@
 </script>
 
 
-<<<<<<< HEAD
-=======
 <!-- Gallery Container -->
 <div class="gallery">
     <!-- <button button="I'm a Student"  />
     <button button="I'm a Teacher"  /> -->
 </div>
 
->>>>>>> 22ebf6067b7cb59f684e19607962319a9d6e0f1a
 <style>
     /* Flexbox for Dynamic Layout */
     .gallery {
