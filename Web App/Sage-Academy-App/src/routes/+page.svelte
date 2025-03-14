@@ -39,7 +39,7 @@
 
     /* Apply a different background color to even-numbered cards */
     :global(.gallery > .card:nth-child(even)) {
-       
+
     }
 
     /* Apply a hover effect: spotlight effect on the hovered card */
