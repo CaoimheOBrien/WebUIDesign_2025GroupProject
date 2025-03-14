@@ -13,48 +13,72 @@
 <h2>Introduction</h2>
 
 <div class="OurPics">
-<img src="/natalia.jpg" alt="Natalia Profile">
+<img src="/natalia.jpg" id="natalia" alt="Natalia Profile">
 <h3>Natalia Ryl</h3>
-<p>Hi!</p>
+<p>Hi I'm Natalia!</p>
+<p>I'm a creative at heart with a love for UI/UX, animation, and game development. </p>
+<p>I enjoy bringing ideas to life through design and always look for new ways to learn, experiment, and improve my skills</p>
 </div>
 
 <div class="OurPics">
-    <img src="/caoimhe.jpg" alt="Caoimhe Profile">
+    <img src="/caoimhe.jpg" id="caoimhe" alt="Caoimhe Profile">
     <h3>Caoimhe O'Brien</h3>
-    <p>Hi!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
 <div class="OurPics">
-    <img src="/aoife.jpg" id="smaller" alt="Aoife Profile">
+    <img src="/aoife.jpg" id="aoife" alt="Aoife Profile">
     <h3>Aoife Leahy</h3>
-    <p>Hi!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
 <div class="OurPics">
-    <img src="/lee.jpg" id="smaller" alt="Lee Profile">
+    <img src="/lee.jpg" id="lee" alt="Lee Profile">
     <h3>Lee Lindsay</h3>
-    <p>Hi!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
 <style>
     h1 { color: #5a9975; }
 
-    p { font-size: 18px; }
+    p { 
+        font-size: 18px;
+     }
 
     h2 {
     color: #5a9975;
+    padding: 50px;
     }
 
     img {
-        width: 300px;
         margin-right: 0.625rem;
     }
 
-    #smaller {
+    #natalia {
+        width: 315px;
+    }
+
+    #caoimhe {
+        width: 280px;
+    }
+
+    #aoife {
         width: 250px;
+    }
+
+    #lee {
+        width: 220px;
     }
 
     .OurPics{
         display: inline-block;
+    }
+
+    .OurPics p {
+        width: 300px;
+        text-align: left;
     }
 </style>
