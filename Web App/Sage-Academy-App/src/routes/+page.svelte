@@ -24,9 +24,6 @@
         margin-top: 25rem;
     }
 
-
-
-
     /* Apply a hover effect: spotlight effect on the hovered card */
     :global(.gallery > .card:hover) {
         transform: scale(1.1); /* Scale up the hovered card */
