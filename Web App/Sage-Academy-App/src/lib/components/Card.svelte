@@ -28,7 +28,8 @@
    
     /* Content Styling: Padding for better spacing */
     .content {
-        padding: 1.5rem;
+        padding: 1.7rem;
+        margin-left: 20%;
     }
 
     /* Title Styling */
