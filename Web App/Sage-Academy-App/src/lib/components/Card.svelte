@@ -4,7 +4,6 @@
 </script>
 
 <div class="card">
-
     <div class="content">
         <h2>{title}</h2>
         <p>{description}</p>
@@ -12,6 +11,7 @@
 </div>
 
 <style>
+
     /* Card container with smooth hover effects */
     .card {
         background: #b9e5cc;
