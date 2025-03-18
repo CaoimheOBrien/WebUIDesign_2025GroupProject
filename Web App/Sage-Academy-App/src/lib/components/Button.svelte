@@ -12,9 +12,9 @@
 <style>
     /* Card container with smooth hover effects */
     .button {
-        background: white;
-        border-radius: 10px; /* Rounded corners */
-        border: 4px solid #016618;
+        background: rgba(129,193,34,0.7);
+        border-radius: 15px; /* Rounded corners */
+        border: 3.5px solid #016618;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         overflow: hidden;
         width: 250px;
@@ -32,6 +32,7 @@
     .content h2 {
         font-size: 1.2rem;
         margin-bottom: 0.5rem;
+        color: white;
     }
 
 
@@ -50,7 +51,7 @@
         display: block;
         width: 40%;
         height: 2px;
-        background: #00ff9d;
+        background: white;
         margin: 0 auto 10px auto;
         transition: width 0.3s ease-in-out;
     }

@@ -13,7 +13,7 @@
 <style>
     /* Card container with smooth hover effects */
     .card {
-        background: white;
+        background: rgba(129,193,34,0.1);
         border-radius: 10px; /* Rounded corners */
         border: 4px solid #016618;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */

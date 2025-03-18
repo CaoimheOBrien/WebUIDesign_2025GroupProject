@@ -32,8 +32,8 @@ li  {
   font-weight: bold; 
   padding: 20px;
   margin: 30px;
-  background-color:rgba(129,193,34,255);
-  border: solid black 1.5px;
+  background-color:rgba(129,193,34,0.7);
+  border: solid #016618 2px;
   border-radius: 10px;
 }
 

@@ -44,7 +44,7 @@
         opacity: 0.9; /* Slightly fade them */
     }
 
-    h1 { color: #28a745; }
+    h1 { color: #016618; }
     p { font-size: 18px; margin: 20px;}
     
 </style>

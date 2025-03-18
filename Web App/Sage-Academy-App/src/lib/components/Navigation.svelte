@@ -13,17 +13,17 @@
         <li><a href="/contact">Contact</a></li>
         <li><a href="/student_home_page_lr">Aoife Test</a></li>
         <li><a href="/staff_quiz_home_page">Aoife Test 2</a></li>
-        <li><a href="/student_quiz_home_page">Lee test 1</a></li>
+        <li><a href="/student_quiz_home_page">Lee test 1</a></li> 
     </ul>
 </nav>
 
 <style>
     /* Base Navigation Styling */
     .nav {
-        background-color:rgba(129,193,34,255);
+        background-color:rgba(129,193,34,1);
         padding: 1rem;
         text-align: center;
-        border: solid black 1.5px;
+        border: solid #016618 3px;
         border-radius: 10px;
     }
 
