@@ -3,9 +3,6 @@
     import Footer from '$lib/components/Footer.svelte';  
 </script>
 
-<!-- Link to global styles -->
-<link rel="stylesheet" href="/styles/global.css" />
-
 <Header />
 
 <!-- Page Content -->
@@ -19,6 +16,7 @@
     main {
         padding: 2rem;
         text-align: center;
+        min-height: 80vh;
     }
     
 </style>

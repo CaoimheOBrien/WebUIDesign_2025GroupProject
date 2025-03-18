@@ -58,19 +58,19 @@
     }
 
     #natalia {
-        width: 315px;
+        width: 18rem;
     }
 
     #caoimhe {
-        width: 280px;
+        width: 15.5rem;
     }
 
     #aoife {
-        width: 250px;
+        width: 14.5rem;
     }
 
     #lee {
-        width: 220px;
+        width: 13rem;
     }
 
     .OurPics{

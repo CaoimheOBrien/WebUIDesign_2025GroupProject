@@ -12,7 +12,8 @@
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="/student_home_page_lr">Aoife Test</a></li>
-        <li><a href=" /staff_quiz_home_page">Aoife Test 2</a></li>
+        <li><a href="/staff_quiz_home_page">Aoife Test 2</a></li>
+        <li><a href="/student_quiz_home_page">Lee test 1</a></li>
     </ul>
 </nav>
 
@@ -37,10 +38,12 @@
         display: inline-block;
     }
 
+
     .nav ul li a {
         color: white;
         text-decoration: none;
         font-weight: bold;
+
     }
 
     /* 🍔 Burger Menu (Hidden on Large Screens) */
