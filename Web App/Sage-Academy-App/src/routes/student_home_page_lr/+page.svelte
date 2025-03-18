@@ -30,7 +30,7 @@
     
     /* Apply a different background color to even-numbered cards */
     :global(.gallery > .card:nth-child(even)) {
-        background-color:hsl(117, 63%, 79%);
+        background-color:rgb(169, 235, 166);
         border: 3px solid rgb(69, 153, 77);
        
     }
@@ -59,7 +59,4 @@
         opacity: 0.9; /* Slightly fade them */
     }
 
-   
-
-    
 </style>

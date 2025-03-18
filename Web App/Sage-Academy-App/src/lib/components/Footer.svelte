@@ -8,10 +8,11 @@
         background-color: #343a40;
         color: white;
         text-align: center;
-        
+        position: relative;
         padding: 1rem;
         bottom: 0;
         width: 100%;
+        
     }
 
     /* Mobile: Reduce padding for a more compact look */
