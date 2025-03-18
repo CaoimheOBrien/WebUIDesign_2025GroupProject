@@ -7,58 +7,42 @@
 
 </script>
 
-
-<<<<<<< HEAD
-=======
-<!-- Gallery Container -->
-<div class="gallery">
-    <Card title="Design Psych" description="" />
-    <Card title="Web User UI" description="" />
-    <Card title="3D Digital Art" description="" />
-    <Card title="UI Prototyping" description="" />
-    
-</div>
+<nav>
+    <ul>
+        <li>Design Psych.</li>
+        <li>Web UI Design</li>
+        <li>UI Prototyping</li>
+        <li>3D Digital Art</li>
+    </ul>
+</nav>
 
 <style>
-    /* Flexbox for Dynamic Layout */
-    .gallery {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        margin-top: 2rem;
-    }
+ul {
 
-    
-    /* Apply a different background color to even-numbered cards */
-    :global(.gallery > .card:nth-child(even)) {
-        background-color:rgb(169, 235, 166);
-        border: 3px solid rgb(69, 153, 77);
-       
-    }
+  width: 300px;
+  padding-right: 70px;
+  padding-top: 0px;
+}
 
-    /* Apply a different background color to even-numbered cards */
-    :global(.gallery > .card:nth-child(odd)) {
-        background-color:rgb(169, 235, 166);
-        border: 3px solid rgb(69, 153, 77);
-    }
+li  {
+  display: block;   
+  color: #000;
+  text-decoration: none;
+  color: white;
+  font-weight: bold; 
+  padding: 20px;
+  margin: 30px;
+  background-color:rgba(129,193,34,255);
+  border: solid black 1.5px;
+  border-radius: 10px;
+}
 
-    /* Apply a hover effect: spotlight effect on the hovered card */
-    :global(.gallery > .card:hover) {
-        transform: scale(0.9); /* Scale up the hovered card */
-        z-index: 2; /* Bring it to the front */
-    }
+nav ul {
+  justify-content: center;
+  gap: 10px;
+  
+}
 
-    /* Reduce the size of adjacent siblings when a card is hovered */
-    :global(.gallery > .card:hover ~ .card) {
-        transform: scale(0.9); /* Reduce size of adjacent cards */
-        opacity: 0.8; /* Slightly fade them */
-    }
 
-    /* Reduce the size of adjacent siblings when a card is hovered */
-    :global(.gallery > .card:hover + .card) {
-        transform: scale(0.95); /* Reduce size of adjacent cards */
-        opacity: 0.9; /* Slightly fade them */
-    }
 
 </style>
->>>>>>> 6c6468f02a440c265d1a8736adff269d7ba49898
