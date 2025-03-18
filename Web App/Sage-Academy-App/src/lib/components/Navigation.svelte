@@ -23,6 +23,8 @@
         background-color:rgba(129,193,34,255);
         padding: 1rem;
         text-align: center;
+        border: solid black 1.5px;
+        border-radius: 10px;
     }
 
     .nav ul {

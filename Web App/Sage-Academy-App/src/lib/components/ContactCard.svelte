@@ -54,7 +54,7 @@
         display: block;
         width: 40%;
         height: 2px;
-        background: #00ff9d;
+        background: rgba(129,193,34,255);
         margin: 0 auto 10px auto;
         transition: width 0.3s ease-in-out;
     }
