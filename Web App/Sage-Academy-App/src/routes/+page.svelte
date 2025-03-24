@@ -11,7 +11,7 @@
 
 <!-- Gallery Container -->
 <div class="gallery">
-    <Button title="I'm Staff" />
+    <Button title="I'm a Staff Member" />
     <Button title="I'm a Student"  />
 </div>
 

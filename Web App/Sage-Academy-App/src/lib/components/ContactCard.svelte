@@ -13,7 +13,7 @@
 <style>
     /* Card container with smooth hover effects */
     .card {
-        background: white;
+        background: rgba(129,193,34,0.1);
         border-radius: 10px; /* Rounded corners */
         border: 4px solid #016618;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -54,7 +54,7 @@
         display: block;
         width: 40%;
         height: 2px;
-        background: #00ff9d;
+        background: rgba(129,193,34,255);
         margin: 0 auto 10px auto;
         transition: width 0.3s ease-in-out;
     }
