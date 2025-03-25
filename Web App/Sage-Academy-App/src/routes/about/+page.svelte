@@ -7,7 +7,7 @@
 </script>
 
 <h1>About Our Team</h1>
-<p>This educational website was created by four students: Natalia, Caoimhe, Aoife and Lee.</p>
+<p>This educational website was created by four students: Caoimhe, Natalia, Aoife and Lee.</p>
 <p>We are Second Year students currently studying Interactive Digital Art and Design in SETU Carlow.</p>
 
 <h2>Introduction</h2>

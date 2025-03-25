@@ -5,19 +5,19 @@ const designModule = {
 
     topics: [
         {
-            name: "topic1",
+            name: "topic1.1",
             content: "content"
         },
         {
-            name: "topic2",
+            name: "topic1.2",
             content: "content"
         },
         {
-            name: "topic3",
+            name: "topic1.3",
             content: "content"
         },
         {
-            name: "topic4",
+            name: "topic1.4",
             content: "content"
         }
     ]
@@ -30,19 +30,19 @@ const webUIModule = {
 
     topics: [
         {
-            name: "topic1",
+            name: "topic2.1",
             content: "content"
         },
         {
-            name: "topic2",
+            name: "topic2.2",
             content: "content"
         },
         {
-            name: "topic3",
+            name: "topic2.3",
             content: "content"
         },
         {
-            name: "topic4",
+            name: "topic2.4",
             content: "content"
         }
     ]
@@ -55,19 +55,19 @@ const UIProtoModule = {
 
     topics: [
         {
-            name: "topic1",
+            name: "topic3.1",
             content: "content"
         },
         {
-            name: "topic2",
+            name: "topic3.2",
             content: "content"
         },
         {
-            name: "topic3",
+            name: "topic3.3",
             content: "content"
         },
         {
-            name: "topic4",
+            name: "topic3.4",
             content: "content"
         }
     ]
@@ -80,19 +80,19 @@ const digitalArtModule = {
 
     topics: [
         {
-            name: "topic1",
+            name: "topic4.1",
             content: "content"
         },
         {
-            name: "topic2",
+            name: "topic4.2",
             content: "content"
         },
         {
-            name: "topic3",
+            name: "topic4.3",
             content: "content"
         },
         {
-            name: "topic4",
+            name: "topic4.4",
             content: "content"
         }
     ]
