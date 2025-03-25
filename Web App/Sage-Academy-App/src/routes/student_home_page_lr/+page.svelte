@@ -63,6 +63,14 @@ nav li  {
   display: flex;  
   align-items: center; 
   gap: 15px;
+
+  color: white;
+  font-weight: bold; 
+  padding: 15px;
+  margin: 20px 0;
+  background-color:rgba(129,193,34,255);
+  border: solid #016618 3px;
+
   color: black;
   padding: 15px;
   margin: 10px 0;

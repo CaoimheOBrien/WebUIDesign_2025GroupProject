@@ -14,6 +14,8 @@
         <li><a href="/student_home_page_lr">student home lr</a></li>
         <li><a href="/staff_quiz_home_page">staff home quiz</a></li>
         <li><a href="/student_home_page">student home</a></li> 
+        <li><a href="/staff_lr_home_page">staff lr home</a></li> 
+        <li><a href="/staff_class_info_home_page">staff CI home</a></li> 
     </ul>
 </nav>
 

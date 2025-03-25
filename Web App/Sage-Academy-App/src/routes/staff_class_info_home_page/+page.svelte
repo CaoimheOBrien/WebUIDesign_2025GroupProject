@@ -2,7 +2,7 @@
     import { onMount } from 'svelte';
 
     onMount(() => {
-        console.log("Staff Quiz Home Page Loaded");
+        console.log("Staff Class Info Home Page Loaded");
     });
 
 </script>
@@ -26,6 +26,10 @@
         <li>
             <img src="art.webp" alt=""/>
             3D Digital Art
+        </li>
+        <li>
+            <img src="new.png" alt=""/>
+            Add Module
         </li>
     </ul>
 </nav>

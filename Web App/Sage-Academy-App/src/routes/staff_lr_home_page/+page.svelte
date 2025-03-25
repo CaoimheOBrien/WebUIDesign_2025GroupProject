@@ -2,7 +2,7 @@
     import { onMount } from 'svelte';
 
     onMount(() => {
-        console.log("Staff Quiz Home Page Loaded");
+        console.log("Staff Learning Resource Home Page Loaded");
     });
 
 </script>
