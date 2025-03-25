@@ -5,6 +5,41 @@
         console.log("Student Learning Resources Home Page Loaded");
     });
 
+    let modules = [
+      {
+        "Design Psych.": [
+          {"topic1": "content"},
+          {"topic2": "content"},
+          {"topic3": "content"},
+          {"topic4": "content"}
+        ]
+      },
+      {
+        "Web UI Design": [
+          {"topic1": "content"},
+          {"topic2": "content"},
+          {"topic3": "content"},
+          {"topic4": "content"}
+        ]
+      },
+      {
+        "UI Prototyping": [
+          {"topic1": "content"},
+          {"topic2": "content"},
+          {"topic3": "content"},
+          {"topic4": "content"}
+        ]
+      },
+      {
+        "3D Digital Art": [
+          {"topic1": "content"},
+          {"topic2": "content"},
+          {"topic3": "content"},
+          {"topic4": "content"}
+        ]
+      }
+    ]
+
 </script>
 
 <nav>
@@ -41,13 +76,27 @@ li  {
   display: flex;  
   align-items: center; 
   gap: 15px;
+<<<<<<< HEAD
   color: white;
   font-weight: bold; 
   padding: 15px;
   margin: 20px 0;
   background-color:rgba(129,193,34,255);
   border: solid #016618 3px;
+=======
+  color: black;
+  padding: 15px;
+  margin: 20px 0;
+  background-color:rgba(129,193,34,0.3);
+  border: solid black 2px;
+>>>>>>> e17ebbbbb14f983fe4ac102ced6e58114e5776bf
   border-radius: 10px;
+}
+
+li:hover {
+  background-color: rgba(129, 193, 34, 0.6); 
+  cursor: pointer; 
+  transform: scale(1.05); 
 }
 
 nav ul {

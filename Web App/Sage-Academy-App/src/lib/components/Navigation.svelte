@@ -21,11 +21,21 @@
 <style>
     /* Base Navigation Styling */
     .nav {
-        background-color:rgba(129,193,34,1);
         padding: 1rem;
         text-align: center;
-        border: solid #016618 3px;
-        border-radius: 10px;
+    }
+
+    nav a {
+        margin-right: 15px;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        transition: background 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+        background-color: rgba(129,193,34,0.8);
+        cursor: pointer;
     }
 
     .nav ul {
@@ -34,7 +44,6 @@
         margin: 0;
         display: flex;
         justify-content: center;
-        gap: 20px;
     }
 
     .nav ul li {
@@ -43,10 +52,13 @@
 
 
     .nav ul li a {
-        color: white;
+        color: black;
         text-decoration: none;
-        font-weight: bold;
+        font-size: 18px;
+    }
 
+    .nav ul li a:hover {
+        color: white;
     }
 
     /* 🍔 Burger Menu (Hidden on Large Screens) */
