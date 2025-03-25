@@ -70,5 +70,6 @@
 
   .button span {
       font-size: 18px; /* Adjusted to match your previous buttons */
+      font-weight: bold;
   }
 </style>

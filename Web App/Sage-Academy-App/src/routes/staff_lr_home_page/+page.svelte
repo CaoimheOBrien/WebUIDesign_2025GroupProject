@@ -1,23 +1,32 @@
 <script>
     import { onMount } from 'svelte';
-    import { modules } from '$lib/moduleStore.js';
 
     onMount(() => {
-        console.log("Student Learning Resources Home Page Loaded");
+        console.log("Staff Learning Resource Home Page Loaded");
     });
-
-    
 
 </script>
 
 <nav>
     <ul>
-      {#each modules as module}
         <li>
-          <img src={module.image} alt={module.alt}/>
-          {module.name}
+            <img src="brain.png" alt=""/>
+            Design Psych.
+
         </li>
-      {/each}
+        <li>
+            <img src="computer.png" alt=""/>
+            Web UI Design
+        </li>
+        <li>
+            <img src="prototype.png" alt=""/>
+            UI Prototyping
+            
+        </li>
+        <li>
+            <img src="art.webp" alt=""/>
+            3D Digital Art
+        </li>
     </ul>
 </nav>
 
@@ -32,17 +41,14 @@ li  {
   display: flex;  
   align-items: center; 
   gap: 15px;
-
-  color: white;
-  font-weight: bold; 
-  padding: 15px;
-  margin: 20px 0;
-  background-color:rgba(129,193,34,255);
-  border: solid #016618 3px;
-
   color: black;
   padding: 15px;
   margin: 20px 0;
+  font-weight: bold;
+
+  background-color:rgba(129,193,34,255);
+  border: solid #016618 3px;
+
   background-color:rgba(129,193,34,0.3);
   border: solid black 2px;
   border-radius: 10px;
