@@ -13,7 +13,7 @@
     <button on:click={() => location.href = "/"}>
         <h2>I'm a Staff Member</h2>
     </button>
-    <button on:click={() => location.href = "/"}>
+    <button on:click={() => location.href = "/student_home_page"}>
         <h2>I'm a Student</h2>
     </button>
 </div>

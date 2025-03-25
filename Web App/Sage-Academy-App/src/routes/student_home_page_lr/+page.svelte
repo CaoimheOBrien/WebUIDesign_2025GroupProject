@@ -7,10 +7,20 @@
     });
 
     let selectedModule = null;
+    let selectedTopic = null;
 
     function selectModule(module) {
     selectedModule = module;
+    selectedTopic = null;
   }
+
+  function selectTopic(topic) {
+        selectedTopic = topic;
+    }
+
+    function goBack() {
+        selectedTopic = null;
+    }
 
 </script>
 
@@ -29,14 +39,18 @@
 
 {#if selectedModule}
   <div class="topics">
-    <h1>{selectedModule.name}</h1>
-    <ul>
-      {#each selectedModule.topics as topic}
-        <li>
-          {topic.name}
-        </li>
-      {/each}
+    {#if selectedTopic}
+      <button on:click={goBack} class="back-btn">← Back</button>
+      <h1>{selectedTopic.name}</h1>
+      <p>{selectedTopic.content}</p>
+    {:else}
+      <h1>{selectedModule.name}</h1>
+      <ul>
+        {#each selectedModule.topics as topic}
+          <li on:click={() => selectTopic(topic)}>{topic.name}</li>
+        {/each}
     </ul>
+    {/if}
   </div>
 {/if}
 </div>
@@ -121,6 +135,19 @@ img {
 
   .topics li:hover {
     background-color: rgba(129, 193, 34, 0.6);
+  }
+
+  .back-btn {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .back-btn:hover {
+    text-decoration: underline;
   }
 
 </style>

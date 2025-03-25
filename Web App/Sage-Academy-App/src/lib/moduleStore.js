@@ -5,7 +5,7 @@ const designModule = {
 
     topics: [
         {
-            name: "topic1.1",
+            name: "Colour Theory",
             content: "content"
         },
         {
