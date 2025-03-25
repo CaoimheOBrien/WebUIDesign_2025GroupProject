@@ -42,7 +42,7 @@
 </div>
 
 <style>
-    h1 { color: #016618; }
+    h1 { color: #016618; margin-bottom: 20px;}
 
     p { 
         font-size: 18px;

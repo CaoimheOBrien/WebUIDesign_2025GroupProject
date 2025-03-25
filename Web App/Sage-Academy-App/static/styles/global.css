@@ -3,13 +3,13 @@
    =============================== */
 :root {
     /* Color Variables */
-    --primary-color: #6bb58b;
+    --primary-color: rgba(129,193,34,1);
     --secondary-color: #016618; /* for titles */
-    --background-color: #ffffff;
+    --background-color: #f9f9f9;
     --text-color: #213547;
 
     /* Font Variables */
-    --font-family: 'Inter', system-ui, sans-serif;
+    --font-family: 'Nunito', sans-serif;
     --base-font-size: 16px;
 
     /* Spacing Variables */
