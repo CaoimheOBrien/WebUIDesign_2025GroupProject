@@ -43,17 +43,10 @@ li  {
   gap: 15px;
   color: white;
   font-weight: bold; 
-<<<<<<< HEAD
   padding: 15px;
   margin: 20px 0;
   background-color:rgba(129,193,34,255);
-  border: solid black 1.5px;
-=======
-  padding: 20px;
-  margin: 30px;
-  background-color:rgba(129,193,34,0.7);
-  border: solid #016618 2px;
->>>>>>> 7eae00ce403f7a2b4c30cf6bdbf1d465ea8a7bbf
+  border: solid #016618 3px;
   border-radius: 10px;
 }
 

@@ -46,7 +46,7 @@ li  {
   padding: 15px;
   margin: 20px 0;
   background-color:rgba(129,193,34,255);
-  border: solid black 1.5px;
+  border: solid #016618 3px;
   border-radius: 10px;
 }
 

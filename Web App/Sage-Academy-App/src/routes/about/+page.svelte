@@ -30,9 +30,10 @@
 <div class="OurPics">
     <img src="/aoife.jpg" id="aoife" alt="Aoife Profile">
     <h3>Aoife Leahy</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
+    <p>Hi, I'm Aoife!</p>
+    <p>I'm passionate about animation and concept art, and I love designing and bringing new characters to life.</p>
+    <p>I'm always looking for new ways to improve, refine my skills, and push my artistic boundaries.</p>
+</div>
 
 <div class="OurPics">
     <img src="/lee.jpg" id="lee" alt="Lee Profile">
