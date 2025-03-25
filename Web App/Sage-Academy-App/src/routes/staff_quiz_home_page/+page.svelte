@@ -44,8 +44,11 @@ li  {
   color: black;
   padding: 15px;
   margin: 20px 0;
+<<<<<<< HEAD
   background-color:rgba(129,193,34,255);
   border: solid #016618 3px;
+=======
+>>>>>>> 2fa5bafb19cb14ce374686eca99a55936cea6611
   background-color:rgba(129,193,34,0.3);
   border: solid black 2px;
   border-radius: 10px;
