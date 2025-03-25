@@ -76,20 +76,20 @@ li  {
   display: flex;  
   align-items: center; 
   gap: 15px;
-<<<<<<< HEAD
+
   color: white;
   font-weight: bold; 
   padding: 15px;
   margin: 20px 0;
   background-color:rgba(129,193,34,255);
   border: solid #016618 3px;
-=======
+
   color: black;
   padding: 15px;
   margin: 20px 0;
   background-color:rgba(129,193,34,0.3);
   border: solid black 2px;
->>>>>>> e17ebbbbb14f983fe4ac102ced6e58114e5776bf
+
   border-radius: 10px;
 }
 

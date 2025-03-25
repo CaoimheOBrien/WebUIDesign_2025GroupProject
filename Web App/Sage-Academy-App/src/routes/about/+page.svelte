@@ -31,7 +31,7 @@
     <img src="/aoife.jpg" id="aoife" alt="Aoife Profile">
     <h3>Aoife Leahy</h3>
     <p>Hi, I'm Aoife!</p>
-    <p>I'm passionate about animation and concept art, and I love designing and bringing new characters to life.</p>
+    <p>I'm passionate about animation, UI/UX Design and concept art. I love designing and bringing new characters to life.</p>
     <p>I'm always looking for new ways to improve, refine my skills, and push my artistic boundaries.</p>
 </div>
 
