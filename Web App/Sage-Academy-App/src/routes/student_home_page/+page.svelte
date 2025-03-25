@@ -11,12 +11,13 @@
 <!-- Gallery Container -->
 <div class="gallery">
     <button on:click={() => location.href = "/"}>
-        <h2>I'm a Staff Member</h2>
+        <h2>Quizzes</h2>
     </button>
-    <button on:click={() => location.href = "/"}>
-        <h2>I'm a Student</h2>
+    <button on:click={() => location.href = "/student_home_page_lr"}>
+        <h2>Learning Resources</h2>
     </button>
 </div>
+
 
 <style>
     .gallery {

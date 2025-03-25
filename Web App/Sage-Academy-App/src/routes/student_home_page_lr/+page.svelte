@@ -1,67 +1,23 @@
 <script>
     import { onMount } from 'svelte';
+    import { modules } from '$lib/moduleStore.js';
 
     onMount(() => {
         console.log("Student Learning Resources Home Page Loaded");
     });
 
-    let modules = [
-      {
-        "Design Psych.": [
-          {"topic1": "content"},
-          {"topic2": "content"},
-          {"topic3": "content"},
-          {"topic4": "content"}
-        ]
-      },
-      {
-        "Web UI Design": [
-          {"topic1": "content"},
-          {"topic2": "content"},
-          {"topic3": "content"},
-          {"topic4": "content"}
-        ]
-      },
-      {
-        "UI Prototyping": [
-          {"topic1": "content"},
-          {"topic2": "content"},
-          {"topic3": "content"},
-          {"topic4": "content"}
-        ]
-      },
-      {
-        "3D Digital Art": [
-          {"topic1": "content"},
-          {"topic2": "content"},
-          {"topic3": "content"},
-          {"topic4": "content"}
-        ]
-      }
-    ]
+    
 
 </script>
 
 <nav>
     <ul>
+      {#each modules as module}
         <li>
-            <img src="brain.png" alt=""/>
-            Design Psych.
-
+          <img src={module.image} alt={module.alt}/>
+          {module.name}
         </li>
-        <li>
-            <img src="computer.png" alt=""/>
-            Web UI Design
-        </li>
-        <li>
-            <img src="prototype.png" alt=""/>
-            UI Prototyping
-            
-        </li>
-        <li>
-            <img src="art.webp" alt=""/>
-            3D Digital Art
-        </li>
+      {/each}
     </ul>
 </nav>
 
