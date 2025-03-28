@@ -137,3 +137,14 @@ export let modules = [
     digitalArtModule,
     // rest of modules here
 ];
+
+  
+export function addTopic() {
+        let topics = modules[0].topics;
+
+        const newTopic = {
+            name: "topic4.5",
+            content: "content"
+        }
+        topics = [...topics, newTopic]; // Adds a new topic
+    }
