@@ -5,71 +5,73 @@
         console.log("Staff Home Page Loaded");
     });
 
-    let buttons = [
-        "Quizzes",
-        "Learning Resources",
-        "Class Information"
-    ];
 </script>
 
-<div class="button-container">
-    {#each buttons as button}
-        <button class="button">
-            <div class="line"></div>
-            <span>{button}</span>
-        </button>
-    {/each}
+
+<!-- Gallery Container -->
+<div class="gallery">
+    <button on:click={() => location.href = "/"}>
+        <h2>Quizzes</h2>
+    </button>
+    <button on:click={() => location.href = "/"}>
+        <h2>Learning Resources</h2>
+    </button>
+    <button on:click={() => location.href = "/"}>
+        <h2>Class Information</h2>
+    </button>
 </div>
 
+
 <style>
-  .button-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: auto;
-    gap: 2rem; /* Creates spacing between items */
-    margin: 5rem;
-  }
+    .gallery {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: auto;
+        gap: 7rem;
+        margin: 5rem;
+        justify-content: center;
+    }
 
-  .button {
-      background: rgba(129,193,34,0.1);
-      border-radius: 10px; /* Rounded corners */
-      border: 4px solid #016618;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-      overflow: hidden;
-      width: 250px;
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-      padding: 1.5rem; /* Space inside the button */
-      font-size: 1.2rem;
-     
-      color: #003300; /* Dark green text */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 5px; /* Space between line and text */
-  }
+    /* Style the button directly to act like a card */
+    button{
+        background: rgba(129, 193, 34, 0.1);
+        border-radius: 10px;
+        border: 4px solid #016618;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 250px;
+        text-align: center;
+        padding: 1.5rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
 
-  .button .line {
-      width: 40%; /* Initial width of the line */
-      height: 2px;
-      background: rgba(129,193,34,255);
-      transition: width 0.3s ease-in-out; /* Smooth transition for width */
-  }
+    /* Style the button content (h2) */
+    button h2 {
+        font-size: 1.2rem;
+        margin: 0;  /* Remove any margin */
+        color: inherit;  /* Inherit color from parent */
+    }
 
-  .button:hover .line {
-      width: 80%; /* Expand the line to 80% of the button width on hover */
-  }
+    /* Hover effect for the button */
+    button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
 
-  .button:hover {
-      transform: translateY(-5px); /* Subtle lift on hover */
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* More prominent shadow */
-      cursor: pointer;
-  }
+    /* Pseudo-element for underline on hover */
+    button h2::before {
+        content: "";
+        display: block;
+        width: 40%;
+        height: 2px;
+        background: rgba(129, 193, 34, 255);
+        margin: 0 auto 10px auto;
+        transition: width 0.3s ease-in-out;
+    }
 
-  .button span {
-      font-size: 18px; /* Adjusted to match your previous buttons */
-      font-weight: bold;
-  }
+    button:hover h2::before {
+        width: 80%;  /* Expand the underline on hover */
+    }
 </style>
