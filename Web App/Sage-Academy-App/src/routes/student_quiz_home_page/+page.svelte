@@ -4,7 +4,22 @@
     onMount(() => {
         console.log("Staff Home Page Loaded");
     });
+    
+    let selectedModule = null;
+    let selectedTopic = null;
 
+    function selectModule(module) {
+    selectedModule = module;
+    selectedTopic = null;
+  }
+
+  function selectTopic(topic) {
+        selectedTopic = topic;
+    }
+
+    function goBack() {
+        selectedTopic = null;
+    }
 </script>
 
 <nav>

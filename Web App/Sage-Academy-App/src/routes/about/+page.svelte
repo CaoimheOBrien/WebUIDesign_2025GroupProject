@@ -15,8 +15,9 @@
 <div class="OurPics">
     <img src="/caoimhe.jpg" id="caoimhe" alt="Caoimhe Profile">
     <h3>Caoimhe O'Brien</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Hi I'm Caoimhe!</p>
+    <p>I'm an enthusiastic studnet with an interest in UX/UI, web development and animation.</p>
+    <p>I focus on creating interesting, user-centered and innovative designs. I also want to create eye-catching pieces and websites. </p>
 </div>
 
 <div class="OurPics">
