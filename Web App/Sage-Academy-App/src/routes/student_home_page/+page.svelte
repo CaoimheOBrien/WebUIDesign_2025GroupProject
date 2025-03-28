@@ -10,7 +10,7 @@
 
 <!-- Gallery Container -->
 <div class="gallery">
-    <button on:click={() => location.href = "/"}>
+    <button on:click={() => location.href = "/student_quiz_home_page"}>
         <h2>Quizzes</h2>
     </button>
     <button on:click={() => location.href = "/student_home_page_lr"}>

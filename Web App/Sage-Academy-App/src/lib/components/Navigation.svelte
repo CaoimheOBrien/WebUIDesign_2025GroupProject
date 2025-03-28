@@ -11,11 +11,9 @@
         <li><a href="/">Login</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
-        <li><a href="/staff_quiz_home_page">staff home quiz</a></li>
-        <li><a href="/staff_lr_home_page">staff lr home</a></li> 
-        <li><a href="/staff_class_info_home_page">staff CI home</a></li> 
-        <li><a href="/student_quiz_home_page">student quiz home</a></li> 
-        <li><a href="/staff_home_page">staff home</a></li> 
+
+        <!-- delete later -->
+ 
     </ul>
 </nav>
 
