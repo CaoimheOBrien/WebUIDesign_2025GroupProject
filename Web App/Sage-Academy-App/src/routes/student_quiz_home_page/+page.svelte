@@ -4,11 +4,22 @@
     onMount(() => {
         console.log("Staff Home Page Loaded");
     });
+    
+    let selectedModule = null;
+    let selectedTopic = null;
 
-    function goBackPage() {
-        window.history.back();
+    function selectModule(module) {
+    selectedModule = module;
+    selectedTopic = null;
+  }
+
+  function selectTopic(topic) {
+        selectedTopic = topic;
     }
 
+    function goBack() {
+        selectedTopic = null;
+    }
 </script>
 
 <button on:click={goBackPage} class="page-back-btn">← Back</button>
