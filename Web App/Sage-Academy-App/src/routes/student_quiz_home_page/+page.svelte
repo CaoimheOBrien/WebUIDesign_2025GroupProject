@@ -4,8 +4,25 @@
     onMount(() => {
         console.log("Staff Home Page Loaded");
     });
+    
+    let selectedModule = null;
+    let selectedTopic = null;
 
+    function selectModule(module) {
+    selectedModule = module;
+    selectedTopic = null;
+  }
+
+  function selectTopic(topic) {
+        selectedTopic = topic;
+    }
+
+    function goBack() {
+        selectedTopic = null;
+    }
 </script>
+
+<button on:click={goBackPage} class="page-back-btn">← Back</button>
 
 <nav>
     <ul>
@@ -69,6 +86,21 @@ img {
     width: 40px; 
     height: 40px;
 
+  }
+
+  .page-back-btn {
+    background-color: #016618;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .page-back-btn:hover {
+    background-color: #024d13;
   }
 
 </style>

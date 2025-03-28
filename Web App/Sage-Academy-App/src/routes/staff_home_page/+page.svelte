@@ -10,13 +10,13 @@
 
 <!-- Gallery Container -->
 <div class="gallery">
-    <button on:click={() => location.href = "/"}>
+    <button on:click={() => location.href = "/staff_quiz_home_page"}>
         <h2>Quizzes</h2>
     </button>
-    <button on:click={() => location.href = "/"}>
+    <button on:click={() => location.href = "/staff_lr_home_page"}>
         <h2>Learning Resources</h2>
     </button>
-    <button on:click={() => location.href = "/"}>
+    <button on:click={() => location.href = "/staff_class_info_home_page"}>
         <h2>Class Information</h2>
     </button>
 </div>
