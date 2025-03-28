@@ -5,7 +5,13 @@
         console.log("Staff Home Page Loaded");
     });
 
+    function goBackPage() {
+        window.history.back();
+    }
+
 </script>
+
+<button on:click={goBackPage} class="page-back-btn">← Back</button>
 
 <nav>
     <ul>
@@ -69,6 +75,21 @@ img {
     width: 40px; 
     height: 40px;
 
+  }
+
+  .page-back-btn {
+    background-color: #016618;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .page-back-btn:hover {
+    background-color: #024d13;
   }
 
 </style>
