@@ -13,7 +13,7 @@
     <button on:click={() => location.href = "/student_quiz_home_page"}>
         <h2>Quizzes</h2>
     </button>
-    <button on:click={() => location.href = "/student_home_page_lr"}>
+    <button on:click={() => location.href = "/student_lr"}>
         <h2>Learning Resources</h2>
     </button>
 </div>
@@ -31,7 +31,7 @@
     }
 
     /* Style the button directly to act like a card */
-    button{
+    button {
         background: rgba(129, 193, 34, 0.1);
         border-radius: 10px;
         border: 4px solid #016618;
@@ -70,5 +70,67 @@
 
     button:hover h2::before {
         width: 80%;  /* Expand the underline on hover */
+    }
+
+    /* Responsive Media Queries */
+    
+    /* Large screens (default above) */
+    
+    /* Medium screens (tablets) */
+    @media (max-width: 992px) {
+        .gallery {
+            gap: 5rem;
+            margin: 4rem 2rem;
+        }
+        
+        button {
+            width: 220px;
+            padding: 1.2rem;
+        }
+    }
+    
+    /* Small screens (large phones) */
+    @media (max-width: 768px) {
+        .gallery {
+            gap: 3rem;
+            margin: 3rem 1rem;
+        }
+        
+        button {
+            width: 180px;
+            padding: 1rem;
+        }
+        
+        button h2 {
+            font-size: 1.1rem;
+        }
+    }
+    
+    /* Extra small screens (mobile phones) */
+    @media (max-width: 576px) {
+        .gallery {
+            flex-direction: column;
+            gap: 2rem;
+            margin: 2rem 0.5rem;
+            align-items: center;
+        }
+        
+        button {
+            width: 80%;
+            max-width: 250px;
+            padding: 0.8rem;
+        }
+        
+        button h2 {
+            font-size: 1rem;
+        }
+        
+        button h2::before {
+            margin: 0 auto 6px auto;
+        }
+        
+        button:hover {
+            transform: translateY(-3px);
+        }
     }
 </style>

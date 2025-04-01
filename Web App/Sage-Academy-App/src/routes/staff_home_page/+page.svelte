@@ -10,13 +10,13 @@
 
 <!-- Gallery Container -->
 <div class="gallery">
-    <button on:click={() => location.href = "/staff_quiz_home_page"}>
+    <button on:click={() => location.href = "/staff_quiz"}>
         <h2>Quizzes</h2>
     </button>
-    <button on:click={() => location.href = "/staff_lr_home_page"}>
+    <button on:click={() => location.href = "/staff_lr"}>
         <h2>Learning Resources</h2>
     </button>
-    <button on:click={() => location.href = "/staff_class_info_home_page"}>
+    <button on:click={() => location.href = "/staff_class_info"}>
         <h2>Class Information</h2>
     </button>
 </div>
@@ -33,6 +33,22 @@
         justify-content: center;
     }
 
+    /* Add media queries for different screen sizes */
+    @media (max-width: 1024px) {
+        .gallery {
+            gap: 4rem;
+            margin: 3rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .gallery {
+            gap: 2rem;
+            margin: 2rem;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
     /* Style the button directly to act like a card */
     button{
         background: rgba(129, 193, 34, 0.1);
@@ -47,6 +63,21 @@
         cursor: pointer;
     }
 
+    @media (max-width: 768px) {
+        button {
+            width: 90%;
+            max-width: 250px;
+            padding: 1.2rem;
+            border-width: 3px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        button {
+            width: 95%;
+            padding: 1rem;
+        }
+    }
     /* Style the button content (h2) */
     button h2 {
         font-size: 1.2rem;
@@ -54,6 +85,17 @@
         color: inherit;  /* Inherit color from parent */
     }
 
+    @media (max-width: 768px) {
+        button h2 {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        button h2 {
+            font-size: 1rem;
+        }
+    }
     /* Hover effect for the button */
     button:hover {
         transform: translateY(-5px);
