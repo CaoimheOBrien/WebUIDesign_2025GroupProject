@@ -12,6 +12,9 @@
     let noResultsFound = false; // to show/hide the 'No Results Found' message
 
         // Handle the Enter key press in the search bar
+        /**
+	 * @param {{ key: string; }} event
+	 */
         function handleKeyPress(event) {
         if (event.key === 'Enter') {
             if (searchQuery.trim() === "") {
