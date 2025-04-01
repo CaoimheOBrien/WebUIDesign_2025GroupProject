@@ -46,7 +46,8 @@
   <nav>
       <ul>
         {#each modules as module}
-          <li on:click={() => selectModule(module)}>
+        <li on:click={() => selectModule(module)}
+          class:selected={selectedModule === module}>
             <img src={module.image} alt={module.alt}/>
             {module.name}
           </li>
@@ -131,6 +132,16 @@
     background-color: rgba(129, 193, 34, 0.6); 
     cursor: pointer; 
     transform: scale(1.05); 
+  }
+
+  nav li.selected {
+    background-color: rgba(129, 193, 34, 0.6);
+    transform: scale(1.02);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav li.selected:hover {
+    transform: scale(1.02);
   }
   
   img {
