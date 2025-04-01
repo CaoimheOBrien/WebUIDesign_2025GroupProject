@@ -17,33 +17,24 @@
   let selectedQuiz = null;
 
   /**
-	 * @type {{ name: any; content: any; } | null}
-	 */
-   let selectedQuestions = null;
-
-  /**
 	 * @param {{ name: any; quizzes: any; } | null} module
 	 */
   function selectModule(module) {
   selectedModule = module;
   selectedQuiz = null;
-  selectedQuestions = null; 
 }
 
-/**
-	 * @param {{ name: any; content: any; } | null} quiz
+	/**
+	 * @param {{ name: any; content: any; } | null} quizzes
 	 */
 function selectQuiz(quizzes) {
       selectedQuiz = quizzes;
   }
 
-function selectQuestions(test){
-      selectedQuestions = test; 
-}
-
   function goBack() {
       selectedQuiz = null;
   }
+
 
   function goBackPage() {
       window.history.back();
@@ -71,15 +62,42 @@ function selectQuestions(test){
     <button on:click={goBack} class="back-btn">← Back</button>
     <h1>{selectedQuiz.name}</h1>
 
-    <p>{selectedQuiz.question1}</p>
-    
+    <div class = "question1">
+      <p>{selectedQuiz.question1}</p>
+      <div class= "answers">
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer1_1}</button>
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer1_2}</button>
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer1_3}</button>
+      </div> 
+    </div> 
 
-    {#if selectQuestions}
-      <button on:click={goBack} class="back-btn">← Back</button>
-      <h1>{selectedQuestions.name}</h1>
-    {:else}
+    <div class = "question2">
+      <p>{selectedQuiz.question2}</p>
+      <div class= "answers">
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer2_1}</button>
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer2_2}</button>
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer2_3}</button>
+      </div>
+    </div>
 
-    {/if}
+    <div class = "question3">
+      <p>{selectedQuiz.question3}</p>
+      <div class= "answers">
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer3_1}</button>
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer3_2}</button>
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer3_3}</button>
+      </div>
+    </div>
+
+    <div class = "question4">
+      <p>{selectedQuiz.question4}</p>
+      <div class= "answers">
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer4_1}</button>
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer4_2}</button>
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer4_3}</button>
+      </div>
+    </div>
+
   {:else}
     <h1>{selectedModule.name}</h1>
     <ul>
@@ -177,14 +195,16 @@ img {
 
 .answers {
   display: inline-flex;
+  justify-content: space-between; 
   padding: 1rem;
 }
 
+
 .answers button{
+  text-align: left; 
   margin: 1rem; 
-  padding-left: 1.6rem; 
-  padding-right: 1.6rem; 
-  font-size: 2.5rem; 
+  padding: 1.6rem; 
+  font-size: 1.6rem; 
 
   background-color: rgba(129, 193, 34, 0.3);
   border: solid black 2px;
