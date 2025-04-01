@@ -26,12 +26,30 @@ const designModule = {
         {
             name: "Colour Theory Quiz",
             content: "", /*DO NOT PUT ANYTHING HERE UNDER ANY CIRCUMSTANCES*/ 
-            question1: "Question 1: What colour means angry?",
+            answer1: "Red",
+            answer2: "Blue",
+            answer3: "Orange",
+        }
+    ],
+
+    test:[
+        {
+            name: "Test Title",
+            content: "Content", 
+        }
+    ],
+
+
+    questions:[
+        {
+            name:"Question 1:",
+            content: "Question 1: What colour means angry?",
             answer1: "Red",
             answer2: "Blue",
             answer3: "Orange",
         }
     ]
+
 };
 
 const webUIModule = {

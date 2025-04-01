@@ -17,11 +17,17 @@
   let selectedQuiz = null;
 
   /**
+	 * @type {{ name: any; content: any; } | null}
+	 */
+   let selectedQuestions = null;
+
+  /**
 	 * @param {{ name: any; quizzes: any; } | null} module
 	 */
   function selectModule(module) {
   selectedModule = module;
   selectedQuiz = null;
+  selectedQuestions = null; 
 }
 
 /**
@@ -30,6 +36,10 @@
 function selectQuiz(quizzes) {
       selectedQuiz = quizzes;
   }
+
+function selectQuestions(test){
+      selectedQuestions = test; 
+}
 
   function goBack() {
       selectedQuiz = null;
@@ -62,11 +72,14 @@ function selectQuiz(quizzes) {
     <h1>{selectedQuiz.name}</h1>
 
     <p>{selectedQuiz.question1}</p>
-    <div class= "answers">
-      <p>{selectedQuiz.answer1}</p>
-      <p>{selectedQuiz.answer2}</p>
-      <p>{selectedQuiz.answer3}</p>
-    </div> 
+    
+
+    {#if selectQuestions}
+      <button on:click={goBack} class="back-btn">← Back</button>
+      <h1>{selectedQuestions.name}</h1>
+    {:else}
+
+    {/if}
   {:else}
     <h1>{selectedModule.name}</h1>
     <ul>
@@ -167,7 +180,7 @@ img {
   padding: 1rem;
 }
 
-.answers p{
+.answers button{
   margin: 1rem; 
   padding-left: 1.6rem; 
   padding-right: 1.6rem; 
@@ -180,7 +193,7 @@ img {
   transition: all 0.2s ease-in-out;
 }
 
-.answers p:hover {
+.answers button:hover {
   background-color: rgba(129, 193, 34, 0.6);
 }
 
