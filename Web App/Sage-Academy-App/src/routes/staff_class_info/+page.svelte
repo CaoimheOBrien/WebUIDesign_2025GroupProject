@@ -8,6 +8,9 @@
         console.log("Staff Class Info Home Page Loaded");
     });
 
+    /**
+	 * @type {{ name: string; image: string; alt: string; topics: { name: string; content: string; }[]; quizzes: { name: string; content: string; }[]; } | null}
+	 */
     let selectedModule = null;
     
     /**
@@ -15,6 +18,10 @@
 	 */
     function selectModule(module) {
     selectedModule = module;
+    }
+
+    function goBack() {
+        selectedModule = null;
     }
 
     function goBackPage() {
@@ -37,6 +44,12 @@
       <!-- svelte-ignore a11y_missing_attribute -->
       <button on:click={addModule} class="add-module-btn"><img src="new.png"/>Add Module</button>
   </nav>
+
+  {#if selectedModule}
+  <div class="box">
+    <button on:click={goBack} class="back-btn">← Back</button>
+  </div>
+  {/if}
 </div>
 
 <style>
@@ -172,4 +185,41 @@
   background-color: rgba(129, 193, 34, 0.6);
   transform: scale(1.05);
 }
+
+.box {
+  flex-grow: 1;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  min-height: 400px;
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: 100%;
+    padding: 15px;
+    min-height: 150px;
+  }
+}
+
+.back-btn {
+      background: none;
+      border: none;
+      color: blue;
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 10px;
+      padding: 5px 10px;
+    }
+    
+    @media (max-width: 768px) {
+      .back-btn {
+        font-size: 14px;
+      }
+    }
+  
+    .back-btn:hover {
+      text-decoration: underline;
+    }
 </style>
