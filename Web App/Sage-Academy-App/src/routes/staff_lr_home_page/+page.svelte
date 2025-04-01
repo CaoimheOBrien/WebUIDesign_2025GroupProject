@@ -1,6 +1,7 @@
 <script>
     import { onMount } from 'svelte';
     import { modules } from '$lib/moduleStore.js';
+    import { addTopic } from '$lib/moduleStore.js';
 
     onMount(() => {
         console.log("Staff Learning Resource Home Page Loaded");
@@ -67,6 +68,7 @@
           <li on:click={() => selectTopic(topic)}>{topic.name}</li>
         {/each}
     </ul>
+    <button class="add-topic-btn" on:click={addTopic}>➕ Add Topic</button>
     {/if}
   </div>
 {/if}
@@ -182,5 +184,23 @@
       background-color: #024d13;
     }
   
+    .add-topic-btn {
+  background-color: rgba(129, 193, 34, 0.3);
+  border: solid black 2px;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-topic-btn:hover {
+  background-color: rgba(129, 193, 34, 0.6);
+  transform: scale(1.05);
+}
   </style>
   
