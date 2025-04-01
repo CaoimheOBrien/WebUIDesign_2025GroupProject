@@ -39,8 +39,8 @@
 <div class="OurPics">
     <img src="/lee.jpg" id="lee" alt="Lee Profile">
     <h3>Lee Lindsay</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Hi I'm Lee.</p> 
+    <p>I love mixing technology with creativity. Whether it's making interactive designs or experimenting with digital art, I'm always excited to learn new ways to bring ideas to life. I enjoy staying inspired by the digital world around me.</p>
 </div>
 
 <style>
