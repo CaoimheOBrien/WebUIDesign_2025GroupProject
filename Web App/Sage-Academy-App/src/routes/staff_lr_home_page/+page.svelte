@@ -68,7 +68,7 @@
           <li on:click={() => selectTopic(topic)}>{topic.name}</li>
         {/each}
     </ul>
-    <button class="add-topic-btn" on:click={addTopic}>➕ Add Topic</button>
+    <button on:click={addTopic} class="add-topic-btn">➕ Add Topic</button>
     {/if}
   </div>
 {/if}

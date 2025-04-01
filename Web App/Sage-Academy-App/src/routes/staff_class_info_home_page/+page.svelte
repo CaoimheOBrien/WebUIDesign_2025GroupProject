@@ -1,78 +1,128 @@
 <script>
     import { onMount } from 'svelte';
+    import { modules } from '$lib/moduleStore.js';
+    import { addModule } from '$lib/moduleStore.js';
+
 
     onMount(() => {
         console.log("Staff Class Info Home Page Loaded");
     });
 
+    let selectedModule = null;
+    
+    /**
+	 * @param {{ name: string; image: string; alt: string; topics: { name: string; content: string; }[]; quizzes: { name: string; content: string; }[]; }} module
+	 */
+    function selectModule(module) {
+    selectedModule = module;
+    }
+
+    function goBackPage() {
+        window.history.back();
+    } 
+
 </script>
 
-<nav>
-    <ul>
-        <li>
-            <img src="brain.png" alt=""/>
-            Design Psych.
-
-        </li>
-        <li>
-            <img src="computer.png" alt=""/>
-            Web UI Design
-        </li>
-        <li>
-            <img src="prototype.png" alt=""/>
-            UI Prototyping
-            
-        </li>
-        <li>
-            <img src="art.webp" alt=""/>
-            3D Digital Art
-        </li>
-        <li>
-            <img src="new.png" alt=""/>
-            Add Module
-        </li>
-    </ul>
-</nav>
+<div class="container">
+  <button on:click={goBackPage} class="page-back-btn">← Back</button>
+  <nav>
+      <ul>
+        {#each modules as module}
+          <li on:click={() => selectModule(module)}>
+            <img src={module.image} alt={module.alt}/>
+            {module.name}
+          </li>
+        {/each}
+      </ul>
+      <!-- svelte-ignore a11y_missing_attribute -->
+      <button on:click={addModule} class="add-module-btn"><img src="new.png"/>Add Module</button>
+  </nav>
+</div>
 
 <style>
-ul {
-  width: 220px;
-  padding: 0;
-  list-style: none;
-}
+  .container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  nav {
+    width: 250px;
+    flex-shrink: 0;
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li  {
+    display: flex;  
+    align-items: center; 
+    gap: 15px;
+  
+    color: white;
+    font-weight: bold; 
+    padding: 15px;
+    margin: 20px 0;
+    background-color:rgba(129,193,34,255);
+    border: solid #016618 3px;
+  
+    color: black;
+    padding: 15px;
+    margin: 10px 0;
+    background-color:rgba(129,193,34,0.3);
+    border: solid black 2px;
+    border-radius: 10px;
+  }
+  
+  nav li:hover {
+    background-color: rgba(129, 193, 34, 0.6); 
+    cursor: pointer; 
+    transform: scale(1.05); 
+  }
+  
+  img {
+      width: 40px; 
+      height: 40px;
+  
+    }
+  
+    .page-back-btn {
+      background-color: #016618;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  
+    .page-back-btn:hover {
+      background-color: #024d13;
+    }
 
-li  {
+    .add-module-btn {
+  width: 250px;
   display: flex;  
   align-items: center; 
+  
   gap: 15px;
-  color: black;
-  padding: 15px;
-  margin: 20px 0;
   font-weight: bold;
-
-  background-color:rgba(129,193,34,255);
-  border: solid #016618 3px;
-
-  background-color:rgba(129,193,34,0.3);
+  font-size: 15px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: rgba(129, 193, 34, 0.3);
   border: solid black 2px;
   border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-li:hover {
-  background-color: rgba(129, 193, 34, 0.6); 
-  cursor: pointer; 
-  transform: scale(1.05); 
+.add-module-btn:hover {
+  background-color: rgba(129, 193, 34, 0.6);
+  transform: scale(1.05);
 }
-
-nav ul {
-  justify-content: center;
-  gap: 10px;
-}
-
-img {
-    width: 40px; 
-    height: 40px;
-
-  }
-
 </style>

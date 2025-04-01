@@ -24,8 +24,8 @@
   selectedQuiz = null;
 }
 
-/**
-	 * @param {{ name: any; content: any; } | null} quiz
+	/**
+	 * @param {{ name: any; content: any; } | null} quizzes
 	 */
 function selectQuiz(quizzes) {
       selectedQuiz = quizzes;

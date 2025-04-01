@@ -148,3 +148,13 @@ export function addTopic() {
         }
         topics = [...topics, newTopic]; // Adds a new topic
     }
+
+export function addModule() {
+    let topics = modules[0].topics;
+
+    const newTopic = {
+        name: "topic4.5",
+        content: "content"
+    }
+    topics = [...topics, newTopic]; // Adds a new topic
+}
