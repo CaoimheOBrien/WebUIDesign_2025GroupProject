@@ -6,14 +6,27 @@
         console.log("Student Learning Resources Home Page Loaded");
     });
 
+
+    /**
+	 * @type {{ name: any; topics: any; image?: string; alt?: string; } | null}
+	 */
     let selectedModule = null;
+    /**
+	 * @type {{ name: any; content: any; } | null}
+	 */
     let selectedTopic = null;
 
+    /**
+	 * @param {{ name: string; image: string; alt: string; topics: { name: string; content: string; }[]; }} module
+	 */
     function selectModule(module) {
     selectedModule = module;
     selectedTopic = null;
   }
 
+  /**
+	 * @param {{ name: any; content: any; } | null} topic
+	 */
   function selectTopic(topic) {
         selectedTopic = topic;
     }
