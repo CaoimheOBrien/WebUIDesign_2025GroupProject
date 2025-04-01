@@ -46,10 +46,25 @@
     gap: 30px;
     padding: 20px;
   }
+
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      gap: 15px;
+      padding: 10px;
+    }
+  }
   
   nav {
     width: 250px;
     flex-shrink: 0;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      width: 100%;
+    }
   }
   
   nav ul {
@@ -76,6 +91,14 @@
     border: solid black 2px;
     border-radius: 10px;
   }
+
+  @media (max-width: 768px) {
+    nav li {
+      padding: 12px;
+      margin: 8px 0;
+      font-size: 0.95em;
+    }
+  }
   
   nav li:hover {
     background-color: rgba(129, 193, 34, 0.6); 
@@ -88,6 +111,13 @@
       height: 40px;
   
     }
+
+    @media (max-width: 768px) {
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
   
     .page-back-btn {
       background-color: #016618;
@@ -98,6 +128,15 @@
       cursor: pointer;
       font-size: 16px;
       margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .page-back-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 8px;
+      }
     }
   
     .page-back-btn:hover {
@@ -119,6 +158,14 @@
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .add-module-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
 }
 
 .add-module-btn:hover {

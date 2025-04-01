@@ -70,4 +70,51 @@
     button:hover h2::before {
         width: 80%;  /* Expand the underline on hover */
     }
+
+    /* Media Queries for Responsive Design */
+    /* Small screens and mobile devices */
+    @media (max-width: 600px) {
+        .gallery {
+            gap: 2rem;
+            margin: 2rem 1rem;
+        }
+        
+        button {
+            width: 200px;
+            padding: 1rem;
+        }
+        
+        button h2 {
+            font-size: 1rem;
+        }
+    }
+
+    /* Medium screens and tablets */
+    @media (min-width: 601px) and (max-width: 900px) {
+        .gallery {
+            gap: 4rem;
+            margin: 3rem 2rem;
+        }
+        
+        button {
+            width: 220px;
+            padding: 1.2rem;
+        }
+    }
+
+    /* Large screens */
+    @media (min-width: 901px) and (max-width: 1200px) {
+        .gallery {
+            gap: 5rem;
+            margin: 4rem;
+        }
+    }
+
+    /* Extra large screens */
+    @media (min-width: 1201px) {
+        .gallery {
+            gap: 7rem;
+            margin: 5rem;
+        }
+    }
 </style>
