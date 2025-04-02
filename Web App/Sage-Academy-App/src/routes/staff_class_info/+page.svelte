@@ -13,7 +13,10 @@
 	 */
     let selectedModule = null;
     let searchQuery = ""; // Search bar input
-    let searchResult = ""; 
+    let searchResult = ""; // number of students text
+    let searchResult2 = ""; // no results text
+    let searchResult3 = ""; // list of names bold
+    let searchResult4 = ["1. Olivia Green", "2. Ethan Walker", "3. Isabella Carter", "4. Liam O'Neill", "5. Sophia Davis", "6. Noah Scott", "7. Emma Clark", "8. Eric Johnson", "9. Ava Wilson", "10. Lucas Evans"]; // student names
 
     /**
 	 * @param {{ name: string; image: string; alt: string; topics: { name: string; content: string; }[]; quizzes: { name: string; content: string; }[]; }} module
@@ -30,23 +33,33 @@
         window.history.back();
     } 
 
+
     // Handle the Enter key press in the search bar
     function handleKeyPress(event) {
         if (event.key === 'Enter') {
             // If the search is empty, hide the "No results found" message
             if (searchQuery.trim().toLowerCase() === "number of students") {
-                searchResult = "Number of Students = 20";
+                searchResult = "Number of Students = 10";
+                searchResult3 = "List of names:";
+                searchResult4;
             } else {
                 // If there's any query entered, show "No results found"
-                searchResult = "No Results Found";
+                searchResult2 = "No Results Found";
             }
           
         }
     }
 
-     // Reset the "No results found" message when the user starts typing
-     function handleInputChange() {
+    // Reset the "No results found" message when the user starts typing
+    function handleInputChange() {
         searchResult = "";
+        searchResult3 = "";
+        searchResult4;
+    }
+
+     // Reset the "No results found" message when the user starts typing
+     function handleInputChange2() {
+        searchResult2 = "";
     }
 
 
@@ -79,12 +92,30 @@
    bind:value={searchQuery}
    placeholder="Search..."
    on:keypress={handleKeyPress} 
-   on:input={handleInputChange}   
+   on:input={handleInputChange}  
+   on:input={handleInputChange2}   
 />
 
     {#if searchResult}
     <p class = "search-result">{searchResult}</p>
     {/if}
+
+    {#if searchResult2}
+    <p class = "search-result2">{searchResult2}</p>
+    {/if}
+
+    {#if searchResult3}
+    <p class = "search-result3">{searchResult3}</p>
+    {/if}
+
+    {#if searchResult3}
+    <ul class="search-result4">
+        {#each searchResult4 as name}
+          <li>{name}</li>
+        {/each}
+    </ul>
+    {/if}
+
 
   </div>
   {/if}
@@ -302,9 +333,38 @@
 
   .search-result {
     color: black;
-    font-size: 18px;
+    font-size: 20px;
+    margin-top: 25px;
+    padding-right: 375px;
+}
+
+.search-result2 {
+    color: rgb(255, 0, 0);
+    font-size: 15px;
     margin-top: 10px;
 }
 
+.search-result3 {
+    color: black;
+    font-size: 20px;
+    margin-top: 15px;
+    padding-right: 460px;
+    font-weight: bold;
+}
+
+.search-result4 {
+    color: black;
+    font-size: 18px;
+    margin-top: 10px;
+    padding-right: 470px;
+    
+}
+
+li{
+  list-style: none;
+  align-items: start;
+  text-align: left;
+  padding-left: 8px;
+}
 
 </style>
