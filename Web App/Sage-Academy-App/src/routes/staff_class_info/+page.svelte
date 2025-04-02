@@ -3,21 +3,26 @@
     import { modules, addModule } from '$lib/moduleStore.js';
     import { get } from 'svelte/store';
 
-
     onMount(() => {
         console.log("Staff Class Info Home Page Loaded");
     });
 
-    /**
-	 * @type {{ name: string; image: string; alt: string; topics: { name: string; content: string; }[]; quizzes: { name: string; content: string; }[]; } | null}
-	 */
-    let selectedModule = null;
+   
     let searchQuery = ""; // Search bar input
     let searchResult = ""; // number of students text
     let searchResult2 = ""; // no results text
     let searchResult3 = ""; // list of names bold
-    let searchResult4 = ["1. Olivia Green", "2. Ethan Walker", "3. Isabella Carter", "4. Liam O'Neill", "5. Sophia Davis", "6. Noah Scott", "7. Emma Clark", "8. Eric Johnson", "9. Ava Wilson", "10. Lucas Evans"]; // student names
+    let searchResult4 = ["1. Olivia Green", "2. Ethan Walker", "3. Isabella Carter", "4. Liam O'Neill", 
+    "5. Sophia Davis", "6. Noah Scott", "7. Emma Clark", "8. Eric Johnson", "9. Ava Wilson", "10. Lucas Evans"]; // student names
 
+     /**
+	 * @type {{ name: string; image: string; alt: string; topics: { name: string; content: string; }[]; quizzes: { name: string; content: string; }[]; } | null}
+	 */
+   let selectedModule = null;
+    let newModuleName = '';
+    let newModuleTopics = ['', '', '', '']; // Array to hold the 4 topics
+    let showAddModuleForm = false; // Toggle the form visibility
+    
     /**
 	 * @param {{ name: string; image: string; alt: string; topics: { name: string; content: string; }[]; quizzes: { name: string; content: string; }[]; }} module
 	 */
@@ -42,19 +47,32 @@
     } 
 
     function handleAddModule() {
-      const module = {
-          name: "New Module",
-          content: "Placeholder content for new module."
-      };
+        showAddModuleForm = true;
+    }
 
-      // @ts-ignore
-      addModule(selectedModule.name, topic);
+    function handleSubmitModule() {
+        // Validate that all topics are filled
+        if (newModuleName.trim() && newModuleTopics.every(topic => topic.trim())) {
+            const newModule = {
+                name: newModuleName,
+                image: "new.png",  // Placeholder image
+                alt: "new icon",
+                topics: newModuleTopics.map(topic => ({ name: topic, content: "" })),
+                quizzes: []
+            };
 
-      // Refresh the selectedModule from the store
-      const updatedModules = get(modules);
-      // @ts-ignore
-      selectedModule = updatedModules.find(m => m.name === selectedModule.name);
-  }
+            addModule(newModule); // Add the new module to the store
+            showAddModuleForm = false; // Hide the form after submission
+            newModuleName = "";
+            newModuleTopics = ["", "", "", ""]; // Reset topics after submission
+        } else {
+            alert("Please fill in all fields!");
+        }
+    }
+
+    function handleInputChangeModule(event, index) {
+        newModuleTopics[index] = event.target.value;
+    }
 
 
     // Handle the Enter key press in the search bar
@@ -95,17 +113,34 @@
   <button on:click={goBackPage} class="page-back-btn">← Back</button>
 
   <nav>
-      <ul>
-        {#each $modules as module}
+    <ul>
+      {#each $modules as module}
         <li on:click={() => selectModule(module)} class:selected={selectedModule === module}>
           <img src={module.image} alt={module.alt}/>
           {module.name}
         </li>
       {/each}
-      </ul>
-      <!-- svelte-ignore a11y_missing_attribute -->
-      <button on:click={handleAddModule} class="add-module-btn"><img src="new.png" alt="plus symbol"/>Add Module</button>
+    </ul>
+    <button on:click={handleAddModule} class="add-module-btn">
+      <img src="add.png" alt="add symbol"/>Add Module</button>
   </nav>
+
+  {#if showAddModuleForm}
+    <div class="add-module-form">
+      <h3>Create a New Module</h3>
+      <input type="text" bind:value={newModuleName} placeholder="Module Name" />
+      {#each newModuleTopics as topic, index}
+        <input 
+          type="text" 
+          bind:value={newModuleTopics[index]} 
+          placeholder={`Topic ${index + 1}`} 
+          on:input={(event) => handleInputChangeModule(event, index)} 
+        />
+      {/each}
+      <button on:click={handleSubmitModule} class="submit-btn">Submit Module</button>
+      <button on:click={() => showAddModuleForm = false} class="cancel-btn">Cancel</button>
+    </div>
+  {/if}
 
   {#if selectedModule}
   <div class="box">
@@ -319,6 +354,93 @@ li{
   text-align: left;
   padding-left: 8px;
 }
+
+/* Form container */
+.add-module-form {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form title */
+.add-module-form h3 {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Input fields for module name and topics */
+.add-module-form input {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.add-module-form input:focus {
+  border-color: #016618;
+  outline: none;
+}
+
+/* Submit and Cancel buttons */
+.submit-btn, .cancel-btn {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.submit-btn {
+  background-color: #016618;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #024d13;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+  color: black;
+}
+
+.cancel-btn:hover {
+  background-color: #aaa;
+}
+
+/* Button container */
+.add-module-form button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .add-module-form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .add-module-form input {
+    padding: 10px;
+  }
+
+  .submit-btn, .cancel-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {

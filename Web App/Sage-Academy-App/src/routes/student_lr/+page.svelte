@@ -43,15 +43,14 @@
 <div class="container">
   <button on:click={goBackPage} class="page-back-btn">← Back</button>
   <nav>
-      <ul>
-        {#each modules as module}
-        <li on:click={() => selectModule(module)}
-          class:selected={selectedModule === module}>
-            <img src={module.image} alt={module.alt}/>
-            {module.name}
-          </li>
-        {/each}
-      </ul>
+    <ul>
+      {#each $modules as module}
+        <li on:click={() => selectModule(module)} class:selected={selectedModule === module}>
+          <img src={module.image} alt={module.alt}/>
+          {module.name}
+        </li>
+      {/each}
+    </ul>
   </nav>
 
 
