@@ -33,22 +33,6 @@
         justify-content: center;
     }
 
-    /* Add media queries for different screen sizes */
-    @media (max-width: 1024px) {
-        .gallery {
-            gap: 4rem;
-            margin: 3rem;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .gallery {
-            gap: 2rem;
-            margin: 2rem;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
     /* Style the button directly to act like a card */
     button{
         background: rgba(129, 193, 34, 0.1);
@@ -63,21 +47,6 @@
         cursor: pointer;
     }
 
-    @media (max-width: 768px) {
-        button {
-            width: 90%;
-            max-width: 250px;
-            padding: 1.2rem;
-            border-width: 3px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        button {
-            width: 95%;
-            padding: 1rem;
-        }
-    }
     /* Style the button content (h2) */
     button h2 {
         font-size: 1.2rem;
@@ -85,17 +54,6 @@
         color: inherit;  /* Inherit color from parent */
     }
 
-    @media (max-width: 768px) {
-        button h2 {
-            font-size: 1.1rem;
-        }
-    }
-
-    @media (max-width: 480px) {
-        button h2 {
-            font-size: 1rem;
-        }
-    }
     /* Hover effect for the button */
     button:hover {
         transform: translateY(-5px);
@@ -115,5 +73,45 @@
 
     button:hover h2::before {
         width: 80%;  /* Expand the underline on hover */
+    }
+
+    
+    /* Add media queries for different screen sizes */
+    @media (max-width: 1024px) {
+        .gallery {
+            gap: 4rem;
+            margin: 3rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .gallery {
+            gap: 2rem;
+            margin: 2rem;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button h2 {
+            font-size: 1.1rem;
+        }
+
+        button {
+            width: 90%;
+            max-width: 250px;
+            padding: 1.2rem;
+            border-width: 3px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        button h2 {
+            font-size: 1rem;
+        }
+
+        button {
+            width: 95%;
+            padding: 1rem;
+        }
     }
 </style>

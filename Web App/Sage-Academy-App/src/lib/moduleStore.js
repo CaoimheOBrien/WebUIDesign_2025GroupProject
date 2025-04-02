@@ -1,3 +1,5 @@
+import { writable } from 'svelte/store';
+
 const designModule = {
     name: "Design Psych.",
     image: "brain.png",
@@ -220,31 +222,57 @@ const digitalArtModule = {
     ]
 };
 
-export let modules = [
+
+// Convert the modules array into a writable store
+export const modules = writable([
     designModule,
     webUIModule,
     UIProtoModule,
     digitalArtModule,
     // rest of modules here
-];
+]);
 
   
-export function addTopic() {
-        let topics = modules[0].topics;
+/**
+ * @param {string} moduleName
+ * @param {any} newTopic
+ */
+export function addTopic(moduleName, newTopic) {
+    modules.update(currentModules => {
+        return currentModules.map(mod => {
+            if (mod.name === moduleName) {
+                return {
+                    ...mod,
+                    topics: [...mod.topics, newTopic]
+                };
+            }
+            return mod;
+        });
+    });
+}
 
-        const newTopic = {
-            name: "topic4.5",
-            content: "content"
+
+/**
+ * Adds a new module with an empty topics and quizzes array.
+ * @param {string} moduleName - The name of the new module.
+ */
+export function addModule(moduleName) {
+    modules.update(currentModules => {
+        // Prevent duplicate names (optional safety)
+        const exists = currentModules.some(mod => mod.name === moduleName);
+        if (exists) {
+            console.warn(`Module "${moduleName}" already exists.`);
+            return currentModules;
         }
-        topics = [...topics, newTopic]; // Adds a new topic
-    }
 
-export function addModule() {
-    let topics = modules[0].topics;
+        const newModule = {
+            name: moduleName,
+            image: "",
+            alt: "",
+            topics: [],
+            quizzes: []
+        };
 
-    const newTopic = {
-        name: "topic4.5",
-        content: "content"
-    }
-    topics = [...topics, newTopic]; // Adds a new topic
+        return [...currentModules, newModule];
+    });
 }
