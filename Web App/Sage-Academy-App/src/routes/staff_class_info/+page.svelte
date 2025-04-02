@@ -23,6 +23,14 @@
 	 */
     function selectModule(module) {
     selectedModule = module;
+
+    // Reset search-related variables when selecting a new module
+    searchQuery = "";
+    searchResult = "";
+    searchResult2 = "";
+    searchResult3 = "";
+    searchResult4;
+
     }
 
     function goBack() {
