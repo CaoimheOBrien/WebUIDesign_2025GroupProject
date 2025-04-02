@@ -8,43 +8,7 @@
     });
 
 
-    let searchQuery = ""; // search bar input
-    let noResultsFound = false; // to show/hide the 'No Results Found' message
-
-        // Handle the Enter key press in the search bar
-        function handleKeyPress(event) {
-        if (event.key === 'Enter') {
-            if (searchQuery.trim() === "") {
-                noResultsFound = false; // No need to show "No results found" if the search is empty
-            } else {
-                noResultsFound = true; // Show "No results found" if the query is non-empty
-            }
-        }
-    }
-
-    // Reset the "No results found" message when the user starts typing
-    function handleInputChange() {
-        noResultsFound = false;
-    }
-
-
 </script>
-
-<!-- Search bar -->
-<input type="text" 
-bind:value={searchQuery} 
-placeholder="Search..." 
-on:keypress={handleKeyPress}  
-on:input={handleInputChange} 
-/>
-
-<!-- No Results Found Popup -->
-{#if noResultsFound}
-    <div class="no-results-popup">
-        <p>No results found</p>
-    </div>
-{/if}
-
 
 <!-- Gallery Container -->
 <div class="gallery">
