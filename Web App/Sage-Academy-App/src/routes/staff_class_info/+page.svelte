@@ -140,16 +140,12 @@
   
     }
 
-<<<<<<< HEAD:Web App/Sage-Academy-App/src/routes/staff_class_info_home_page/+page.svelte
-    
-=======
     @media (max-width: 768px) {
     img {
       width: 32px;
       height: 32px;
     }
   }
->>>>>>> 52be92ddc1ef9ea1c2c59369c6f6bd21b48dbfae:Web App/Sage-Academy-App/src/routes/staff_class_info/+page.svelte
   
     .page-back-btn {
       background-color: #016618;
@@ -205,12 +201,6 @@
   transform: scale(1.05);
 }
 
-<<<<<<< HEAD:Web App/Sage-Academy-App/src/routes/staff_class_info_home_page/+page.svelte
-
-
-
-
-=======
 .box {
   flex-grow: 1;
   background-color: #f4f4f4;
@@ -247,5 +237,4 @@
     .back-btn:hover {
       text-decoration: underline;
     }
->>>>>>> 52be92ddc1ef9ea1c2c59369c6f6bd21b48dbfae:Web App/Sage-Academy-App/src/routes/staff_class_info/+page.svelte
 </style>
