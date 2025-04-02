@@ -35,6 +35,7 @@ function selectQuiz(quizzes) {
       selectedQuiz = null;
   }
 
+
   function goBackPage() {
       window.history.back();
   } 
@@ -61,12 +62,42 @@ function selectQuiz(quizzes) {
     <button on:click={goBack} class="back-btn">← Back</button>
     <h1>{selectedQuiz.name}</h1>
 
-    <p>{selectedQuiz.question1}</p>
-    <div class= "answers">
-      <p>{selectedQuiz.answer1}</p>
-      <p>{selectedQuiz.answer2}</p>
-      <p>{selectedQuiz.answer3}</p>
+    <div class = "question1">
+      <p>{selectedQuiz.question1}</p>
+      <div class= "answers">
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer1_1}</button>
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer1_2}</button>
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer1_3}</button>
+      </div> 
     </div> 
+
+    <div class = "question2">
+      <p>{selectedQuiz.question2}</p>
+      <div class= "answers">
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer2_1}</button>
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer2_2}</button>
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer2_3}</button>
+      </div>
+    </div>
+
+    <div class = "question3">
+      <p>{selectedQuiz.question3}</p>
+      <div class= "answers">
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer3_1}</button>
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer3_2}</button>
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer3_3}</button>
+      </div>
+    </div>
+
+    <div class = "question4">
+      <p>{selectedQuiz.question4}</p>
+      <div class= "answers">
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer4_1}</button>
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer4_2}</button>
+        <button on:click={goBack} class = "answer_btn">{selectedQuiz.answer4_3}</button>
+      </div>
+    </div>
+
   {:else}
     <h1>{selectedModule.name}</h1>
     <ul>
@@ -164,14 +195,18 @@ img {
 
 .answers {
   display: inline-flex;
+  justify-content: space-between; 
   padding: 1rem;
 }
 
-.answers p{
+
+.answers button{
+  text-align: left; 
   margin: 1rem; 
-  padding-left: 1.6rem; 
-  padding-right: 1.6rem; 
-  font-size: 2.5rem; 
+  padding: 1.6rem; 
+  font-size: 1rem; 
+
+  width: 10rem;
 
   background-color: rgba(129, 193, 34, 0.3);
   border: solid black 2px;
@@ -180,7 +215,7 @@ img {
   transition: all 0.2s ease-in-out;
 }
 
-.answers p:hover {
+.answers button:hover {
   background-color: rgba(129, 193, 34, 0.6);
 }
 

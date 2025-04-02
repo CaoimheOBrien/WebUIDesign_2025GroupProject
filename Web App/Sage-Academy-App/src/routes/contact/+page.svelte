@@ -18,12 +18,15 @@
 </div>
 
 <style>
-    /* Flexbox for Dynamic Layout */
+    /* Grid for Responsive Layout */
     .gallery2 {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5rem; /* Creates spacing between items */
-        margin: 5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        max-width: 1400px;
+        margin: 3rem auto;
+        padding: 0 1rem;
+        justify-content: center;
     }
 
     /* Apply a hover effect: spotlight effect on the hovered card */
@@ -43,8 +46,33 @@
         transform: scale(0.95); /* Reduce size of adjacent cards */
         opacity: 0.9; /* Slightly fade them */
     }
-
-    h1 { color: #016618; }
-    p { font-size: 18px; margin: 20px;}
+    h1 { 
+        color: #016618; 
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+        margin-bottom: 1rem;
+    }
     
+    p { 
+        font-size: clamp(16px, 2vw, 18px); 
+        margin: 20px;
+    }
+    
+    /* Responsive breakpoints */
+    @media (max-width: 1024px) {
+        .gallery2 {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 800px;
+            gap: 2rem;
+            margin: 2rem auto;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .gallery2 {
+            grid-template-columns: 1fr;
+            max-width: 400px;
+            gap: 1.5rem;
+            margin: 1.5rem auto;
+        }
+    }
 </style>

@@ -18,7 +18,9 @@
         border: 4px solid #016618;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         overflow: hidden;
-        width: 250px;
+        width: 100%; /* Responsive width */
+        max-width: 250px; /* Maximum width */
+        margin: 0 auto; /* Center the card */
         text-align: center;
         transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
     }
