@@ -204,7 +204,9 @@ img {
   text-align: left; 
   margin: 1rem; 
   padding: 1.6rem; 
-  font-size: 1.6rem; 
+  font-size: 1rem; 
+
+  width: 10rem;
 
   background-color: rgba(129, 193, 34, 0.3);
   border: solid black 2px;
