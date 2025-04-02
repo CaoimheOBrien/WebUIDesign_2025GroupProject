@@ -12,7 +12,9 @@
 	 * @type {{ name: string; image: string; alt: string; topics: { name: string; content: string; }[]; quizzes: { name: string; content: string; }[]; } | null}
 	 */
     let selectedModule = null;
-    
+    let searchQuery = ""; // Search bar input
+    let searchResult = ""; 
+
     /**
 	 * @param {{ name: string; image: string; alt: string; topics: { name: string; content: string; }[]; quizzes: { name: string; content: string; }[]; }} module
 	 */
@@ -28,10 +30,31 @@
         window.history.back();
     } 
 
+    // Handle the Enter key press in the search bar
+    function handleKeyPress(event) {
+        if (event.key === 'Enter') {
+            // If the search is empty, hide the "No results found" message
+            if (searchQuery.trim().toLowerCase() === "number of students") {
+                searchResult = "Number of Students = 20";
+            } else {
+                // If there's any query entered, show "No results found"
+                searchResult = "No Results Found";
+            }
+          
+        }
+    }
+
+     // Reset the "No results found" message when the user starts typing
+     function handleInputChange() {
+        searchResult = "";
+    }
+
+
 </script>
 
 <div class="container">
   <button on:click={goBackPage} class="page-back-btn">← Back</button>
+
   <nav>
       <ul>
         {#each modules as module}
@@ -49,8 +72,23 @@
   {#if selectedModule}
   <div class="box">
     <button on:click={goBack} class="back-btn">← Back</button>
+
+     <!-- Search bar -->
+   <input
+   type="text"
+   bind:value={searchQuery}
+   placeholder="Search..."
+   on:keypress={handleKeyPress} 
+   on:input={handleInputChange}   
+/>
+
+    {#if searchResult}
+    <p class = "search-result">{searchResult}</p>
+    {/if}
+
   </div>
   {/if}
+
 </div>
 
 
@@ -208,6 +246,8 @@
   border-radius: 10px;
   border: 2px solid black;
   min-height: 400px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 768px) {
@@ -237,4 +277,34 @@
     .back-btn:hover {
       text-decoration: underline;
     }
+
+    .no-results-popup {
+    color: red;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  input {
+    padding: 10px;  
+    height: 50px;   
+    font-size: 16px; 
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+  }
+
+  @media (max-width: 768px) {
+    input {
+      height: 45px;  /* Adjust for smaller screens */
+      padding: 8px;
+    }
+  }
+
+  .search-result {
+    color: black;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
 </style>

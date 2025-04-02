@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
- 
+
 
     
     onMount(() => {
@@ -8,50 +8,14 @@
     });
 
 
-    let searchQuery = ""; // search bar input
-    let noResultsFound = false; // to show/hide the 'No Results Found' message
-
-        // Handle the Enter key press in the search bar
-        function handleKeyPress(event) {
-        if (event.key === 'Enter') {
-            if (searchQuery.trim() === "") {
-                noResultsFound = false; // No need to show "No results found" if the search is empty
-            } else {
-                noResultsFound = true; // Show "No results found" if the query is non-empty
-            }
-        }
-    }
-
-    // Reset the "No results found" message when the user starts typing
-    function handleInputChange() {
-        noResultsFound = false;
-    }
-
-
 </script>
-
-<!-- Search bar -->
-<input type="text" 
-bind:value={searchQuery} 
-placeholder="Search..." 
-on:keypress={handleKeyPress}  
-on:input={handleInputChange} 
-/>
-
-<!-- No Results Found Popup -->
-{#if noResultsFound}
-    <div class="no-results-popup">
-        <p>No results found</p>
-    </div>
-{/if}
-
 
 <!-- Gallery Container -->
 <div class="gallery">
-    <button on:click={() => location.href = "/staff_home_page"}>
+    <button on:click={() => location.href = "/sign-in_staff"}>
         <h2>I'm a Staff Member</h2>
     </button>
-    <button on:click={() => location.href = "/student_home_page"}>
+    <button on:click={() => location.href = "/sign-in_student"}>
         <h2>I'm a Student</h2>
     </button>
 </div>

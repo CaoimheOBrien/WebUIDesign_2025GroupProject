@@ -27,11 +27,101 @@ const designModule = {
             name: "Colour Theory Quiz",
             content: "", /*DO NOT PUT ANYTHING HERE UNDER ANY CIRCUMSTANCES*/ 
             question1: "Question 1: What colour means angry?",
-            answer1: "Red",
-            answer2: "Blue",
-            answer3: "Orange",
-        }
-    ]
+            answer1_1: "Red",
+            answer1_2: "Blue",
+            answer1_3: "Orange",
+
+            question2: "Question 2: What colour means sad?",
+            answer2_1: "Pink",
+            answer2_2: "Purple",
+            answer2_3: "Blue",
+
+            question3: "Question 3: What colour is associated with the sun?",
+            answer3_1: "Yellow",
+            answer3_2: "Purple",
+            answer3_3: "Orange",
+
+            
+            question4: "Question 4: What colour is associated with earth?",
+            answer4_1: "Red",
+            answer4_2: "Brown",
+            answer4_3: "Yellow",
+        },
+
+        {
+            name: "Gamification Quiz",
+            content: "", /*DO NOT PUT ANYTHING HERE UNDER ANY CIRCUMSTANCES*/ 
+            question1: "Question 1: What is Gamification?",
+            answer1_1: "The use of game-like graphics and animations in non-game websites and apps.",
+            answer1_2: "The application of game mechanics to motivate engagement.",
+            answer1_3: "The practice of using physical games to teach important life skills and lessons.",
+
+            question2: "Question 2: What is the primary goal of gamification??",
+            answer2_1: "To make everyday tasks more competitive.",
+            answer2_2: "To apply game design elements to non-game contexts to increase engagement and motivation.",
+            answer2_3: "To create fully functional video games for educational purposes",
+
+            question3: "Question 3: Which of the following is NOT a typical element of gamification?",
+            answer3_1: "Leaderboards",
+            answer3_2: "Rewrds and badges",
+            answer3_3: "High-end graphics for video games",
+
+            
+            question4: "Question 4:  Gamification is most commonly used in which of the following areas?",
+            answer4_1: "Only in video game development ",
+            answer4_2: "In competitive sports leagues",
+            answer4_3: "In education, marketing and employee engagement",
+        }, 
+
+        {
+            name: "Gestalt Quiz",
+            content: "", /*DO NOT PUT ANYTHING HERE UNDER ANY CIRCUMSTANCES*/ 
+            question1: "Question 1: How many Gestalt Principles are there?",
+            answer1_1: "2",
+            answer1_2: "6",
+            answer1_3: "10",
+
+            question2: "Question 2: Where were the gestalt princples created?",
+            answer2_1: "Ireland and Wales",
+            answer2_2: "Germany and Austria",
+            answer2_3: "Norway and Sweden",
+
+            question3: "Question 3: Which Gestalt Principle talks about optical illusions?",
+            answer3_1: "Closure",
+            answer3_2: "Proximity",
+            answer3_3: "Symetry",
+
+            question4: "Question 4: Which Gestalt Principle talks about having related items in one area?",
+            answer4_1: "Closure",
+            answer4_2: "Proximity",
+            answer4_3: "Symetry",
+        },
+
+        {
+            name: "Dark Patterns Quiz",
+            content: "", /*DO NOT PUT ANYTHING HERE UNDER ANY CIRCUMSTANCES*/ 
+            question1: "Question 1: What is a 'dark pattern' in user interface design?",
+            answer1_1: "A user-friendly feature that enhances website navigation",
+            answer1_2: "A deceptive design that manipulates users into making unintended choices",
+            answer1_3: "A tool that makes websites visually appealing and easy to use",
+
+            question2: "Question 2: Which of the following is an example of a 'bait and switch' dark pattern?",
+            answer2_1: "Offering a free trial, then automatically enrolling users in a paid subscription after the trial ends",
+            answer2_2: "Showing users a pop-up with helpful tips about the website",
+            answer2_3: "Using bright colors to highlight popular products on an online store",
+
+            question3: "Question 3: What does the 'confirmshaming; dark pattern involve?",
+            answer3_1: "Making users feel guilty for opting out of a service or offer",
+            answer3_2: "Offering a free trial with no expiration date",
+            answer3_3: "Providing clear and easy-to-read privacy policies",
+
+            question4: "Question 4: What is the 'hidden costs' dark pattern?",
+            answer4_1: "Offering users an unexpected bonus at checkout",
+            answer4_2: "Adding extra charges to a purchase only revealed at the final step of checkout",
+            answer4_3: "Providing discounts on shipping costs after users have made a purchase",
+        },
+    ],
+
 };
 
 const webUIModule = {
