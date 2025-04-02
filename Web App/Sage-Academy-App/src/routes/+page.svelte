@@ -12,7 +12,7 @@
 
 <!-- Gallery Container -->
 <div class="gallery">
-    <button on:click={() => location.href = "/sign-in"}>
+    <button on:click={() => location.href = "/sign-in_staff"}>
         <h2>I'm a Staff Member</h2>
     </button>
     <button on:click={() => location.href = "/sign-in_student"}>

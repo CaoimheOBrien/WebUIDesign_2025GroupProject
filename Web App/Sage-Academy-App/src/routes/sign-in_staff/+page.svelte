@@ -14,7 +14,7 @@
         <fieldset>
             <legend id= "form_title">Sign-in</legend>
             <br>
-            <legend id="note">Please use your student email.</legend>
+            <legend id="note">Please use your staff email.</legend>
             <br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
@@ -25,7 +25,7 @@
         </fieldset>
         <br>
         
-        <button type="submit" on:click={() => location.href = "/student_home_page"}>Submit</button>
+        <button type="submit" on:click={() => location.href = "/staff_home_page"}>Submit</button>
         <button type="reset">Reset</button>
     </form>
 
@@ -66,12 +66,12 @@
         font-size: 1.4rem;
         margin: 1rem; 
     }
-
+    
     form button:hover{
         transform: translateY(-5px);
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     }
-    
+
     #form_title{
         font-size: 3rem; 
     }
