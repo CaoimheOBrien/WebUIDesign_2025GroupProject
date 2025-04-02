@@ -13,7 +13,7 @@
 	 */
     let selectedModule = null;
     let searchQuery = ""; // Search bar input
-    let noResultsFound = false; 
+    let searchResult = ""; 
 
     /**
 	 * @param {{ name: string; image: string; alt: string; topics: { name: string; content: string; }[]; quizzes: { name: string; content: string; }[]; }} module
@@ -34,18 +34,19 @@
     function handleKeyPress(event) {
         if (event.key === 'Enter') {
             // If the search is empty, hide the "No results found" message
-            if (searchQuery.trim() === "") {
-                noResultsFound = false;
+            if (searchQuery.trim().toLowerCase() === "number of students") {
+                searchResult = "Number of Students = 20";
             } else {
                 // If there's any query entered, show "No results found"
-                noResultsFound = true;
+                searchResult = "No Results Found";
             }
+          
         }
     }
 
      // Reset the "No results found" message when the user starts typing
      function handleInputChange() {
-        noResultsFound = false;
+        searchResult = "";
     }
 
 
@@ -81,18 +82,12 @@
    on:input={handleInputChange}   
 />
 
-    <!-- No Results Found Popup inside the box -->
-   {#if noResultsFound}
-   <div class="no-results-popup">
-       <p>No results found</p>
-   </div>
-  {/if}
+    {#if searchResult}
+    <p class = "search-result">{searchResult}</p>
+    {/if}
 
   </div>
   {/if}
-
-
-   
 
 </div>
 
@@ -304,5 +299,12 @@
       padding: 8px;
     }
   }
+
+  .search-result {
+    color: black;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
 
 </style>
