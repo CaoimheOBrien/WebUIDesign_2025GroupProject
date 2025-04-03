@@ -19,8 +19,8 @@
 	 * @type {{ name: string; image: string; alt: string; topics: { name: string; content: string; }[]; quizzes: { name: string; content: string; }[]; } | null}
 	 */
    let selectedModule = null;
+
     let newModuleName = '';
-    let newModuleTopics = ['', '', '', '']; // Array to hold the 4 topics
     let showAddModuleForm = false; // Toggle the form visibility
     
     /**
@@ -49,31 +49,24 @@
     function handleAddModule() {
         showAddModuleForm = true;
     }
-
-    function handleSubmitModule() {
-        // Validate that all topics are filled
-        if (newModuleName.trim() && newModuleTopics.every(topic => topic.trim())) {
+function handleSubmitModule() {
+        if (newModuleName.trim()) {
             const newModule = {
                 name: newModuleName,
                 image: "new.png",  // Placeholder image
                 alt: "new icon",
-                topics: newModuleTopics.map(topic => ({ name: topic, content: "" })),
+                topics: [],
                 quizzes: []
             };
 
-            addModule(newModule); // Add the new module to the store
-            showAddModuleForm = false; // Hide the form after submission
+            // @ts-ignore
+            addModule(newModule);
+            showAddModuleForm = false;
             newModuleName = "";
-            newModuleTopics = ["", "", "", ""]; // Reset topics after submission
         } else {
-            alert("Please fill in all fields!");
+            alert("Please enter a module name!");
         }
     }
-
-    function handleInputChangeModule(event, index) {
-        newModuleTopics[index] = event.target.value;
-    }
-
 
     // Handle the Enter key press in the search bar
     /**
@@ -129,14 +122,6 @@
     <div class="add-module-form">
       <h3>Create a New Module</h3>
       <input type="text" bind:value={newModuleName} placeholder="Module Name" />
-      {#each newModuleTopics as topic, index}
-        <input 
-          type="text" 
-          bind:value={newModuleTopics[index]} 
-          placeholder={`Topic ${index + 1}`} 
-          on:input={(event) => handleInputChangeModule(event, index)} 
-        />
-      {/each}
       <button on:click={handleSubmitModule} class="submit-btn">Submit Module</button>
       <button on:click={() => showAddModuleForm = false} class="cancel-btn">Cancel</button>
     </div>
