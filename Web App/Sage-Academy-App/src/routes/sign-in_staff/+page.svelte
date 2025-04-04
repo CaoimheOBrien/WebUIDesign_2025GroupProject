@@ -2,33 +2,50 @@
     import { onMount } from 'svelte';
 
     onMount(() => {
-        console.log("Student Quiz Home Page Loaded");
+        console.log("Staff Quiz Home Page Loaded");
     });
+
+    let email = '';
+    let password = '';
+    let isSubmitted = false;
+
+ // Function to handle form submission
+    function submittingForm(event) {
+    event.preventDefault(); // Prevent default form submission
+    isSubmitted = true;
+
+    if (email && password) {
+        location.href = "/staff_home_page";
+    }
+    else {
+        alert('Please fill in all required fields.');
+    }
+
+}
 
 </script>
 
 
 <!-- Gallery Container -->
 <div class="gallery">
-    <form>
+    <form on:submit={submittingForm}>
         <fieldset>
             <legend id= "form_title">Sign-in</legend>
             <br>
-            <legend id="note">Please use your staff email.</legend>
+            <legend id="note">Please use your student email.</legend>
             <br>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" bind:value={email} required/>
             <br><br>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" bind:value={password} required/>
             <br><br>
         </fieldset>
         <br>
         
-        <button type="submit" on:click={() => location.href = "/staff_home_page"}>Submit</button>
-        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+        <button type="reset" on:click={() => { email = ''; password = ''; isSubmitted = false; }}>Reset</button>
     </form>
-
 </div>
 
 
