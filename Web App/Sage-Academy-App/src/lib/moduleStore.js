@@ -553,27 +553,24 @@ export function addTopic(moduleName, newTopic) {
 }
 
 
+
 /**
- * Adds a new module with an empty topics and quizzes array.
- * @param {string} moduleName - The name of the new module.
+ * @param {{ name: any; image?: string; alt?: string; topics?: { name: string; content: string; }[] | never[]; quizzes?: { name: string; content: string; }[] | never[]; }} newModule
  */
-export function addModule(moduleName) {
+export function addModule(newModule) {
+    // @ts-ignore
     modules.update(currentModules => {
         // Prevent duplicate names (optional safety)
-        const exists = currentModules.some(mod => mod.name === moduleName);
+        const exists = currentModules.some(mod => mod.name === newModule.name);
         if (exists) {
-            console.warn(`Module "${moduleName}" already exists.`);
+            console.warn(`Module "${newModule.name}" already exists.`);
             return currentModules;
         }
 
-        const newModule = {
-            name: moduleName,
-            image: "",
-            alt: "",
-            topics: [],
-            quizzes: []
-        };
+        console.log(newModule);
 
         return [...currentModules, newModule];
     });
+
+    console.log(modules);
 }
