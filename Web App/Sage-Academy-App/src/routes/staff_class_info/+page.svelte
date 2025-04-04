@@ -1,7 +1,6 @@
 <script>
     import { onMount } from 'svelte';
     import { modules, addModule } from '$lib/moduleStore.js';
-    import { get } from 'svelte/store';
 
     onMount(() => {
         console.log("Staff Class Info Home Page Loaded");
