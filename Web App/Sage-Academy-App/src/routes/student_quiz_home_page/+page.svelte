@@ -35,8 +35,7 @@
   function selectModule(module) {
   selectedModule = module;
   selectedQuiz = null;
-  resetAnswerWrong();
-  resetAnswerRight();
+  resetAnswers();
 }
 
 	/**
