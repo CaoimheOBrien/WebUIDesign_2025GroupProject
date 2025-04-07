@@ -2,8 +2,9 @@
     import { onMount } from 'svelte';
     import { modules, addModule } from '$lib/moduleStore.js';
 
+
     onMount(() => {
-        console.log("Staff Class Info Home Page Loaded");
+        console.log("Staff Class Info Loaded");
     });
 
    

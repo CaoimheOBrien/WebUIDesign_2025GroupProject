@@ -5,7 +5,7 @@
 
   
   onMount(() => {
-      console.log("Staff Learning Resource Home Page Loaded");
+      console.log("Staff Learning Resource Loaded");
   });
 
 

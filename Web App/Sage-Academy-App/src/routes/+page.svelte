@@ -4,7 +4,7 @@
 
     
     onMount(() => {
-        console.log("Student Quiz Home Page Loaded");
+        console.log("Home Page Loaded");
     });
 
 

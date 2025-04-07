@@ -3,7 +3,7 @@
     import { modules } from '$lib/moduleStore.js';
 
     onMount(() => {
-        console.log("Student Learning Resources Home Page Loaded");
+        console.log("Student Learning Resources Loaded");
     });
 
     /**

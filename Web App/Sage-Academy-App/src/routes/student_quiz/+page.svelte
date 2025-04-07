@@ -109,36 +109,36 @@ function selectQuiz(quizzes) {
     <div class = "question1">
       <p>{selectedQuiz.question1}</p>
       <div class= "answers">
-        <button class = "right">{selectedQuiz.answer1_1}</button>
-        <button class = "wrong">{selectedQuiz.answer1_2}</button>
-        <button class = "wrong">{selectedQuiz.answer1_3}</button>
+        <button on:click={showAnswer1} class = "{isRight1 ? 'right': 'answer_btn'}">{selectedQuiz.answer1_1}</button>
+        <button on:click={showAnswer1} class = "{isWrong1 ? 'wrong': 'answer_btn'}">{selectedQuiz.answer1_2}</button>
+        <button on:click={showAnswer1} class = "{isWrong1 ? 'wrong': 'answer_btn'}">{selectedQuiz.answer1_3}</button>
       </div> 
     </div> 
 
     <div class = "question2">
       <p>{selectedQuiz.question2}</p>
       <div class= "answers">
-        <button class = "wrong">{selectedQuiz.answer2_1}</button>
-        <button class = "wrong">{selectedQuiz.answer2_2}</button>
-        <button class = "right">{selectedQuiz.answer2_3}</button>
+        <button on:click={showAnswer2} class = "{isWrong2 ? 'wrong': 'answer_btn'}">{selectedQuiz.answer2_1}</button>
+        <button on:click={showAnswer2} class = "{isWrong2 ? 'wrong': 'answer_btn'}">{selectedQuiz.answer2_2}</button>
+        <button on:click={showAnswer2} class = "{isRight2 ? 'right': 'answer_btn'}">{selectedQuiz.answer2_3}</button>
       </div>
     </div>
 
     <div class = "question3">
       <p>{selectedQuiz.question3}</p>
       <div class= "answers">
-        <button class = "right">{selectedQuiz.answer3_1}</button>
-        <button class = "wrong">{selectedQuiz.answer3_2}</button>
-        <button class = "wrong">{selectedQuiz.answer3_3}</button>
+        <button on:click={showAnswer3} class = "{isRight3 ? 'right': 'answer_btn'}">{selectedQuiz.answer3_1}</button>
+        <button on:click={showAnswer3} class = "{isWrong3 ? 'wrong': 'answer_btn'}">{selectedQuiz.answer3_2}</button>
+        <button on:click={showAnswer3} class = "{isWrong3 ? 'wrong': 'answer_btn'}">{selectedQuiz.answer3_3}</button>
       </div>
     </div>
 
     <div class = "question4">
       <p>{selectedQuiz.question4}</p>
       <div class= "answers">
-        <button class = "wrong">{selectedQuiz.answer4_1}</button>
-        <button class = "right">{selectedQuiz.answer4_2}</button>
-        <button class = "wrong">{selectedQuiz.answer4_3}</button>
+        <button on:click={showAnswer4} class = "{isWrong4 ? 'wrong': 'answer_btn'}">{selectedQuiz.answer4_1}</button>
+        <button on:click={showAnswer4} class = "{isRight4 ? 'right': 'answer_btn'}">{selectedQuiz.answer4_2}</button>
+        <button on:click={showAnswer4} class = "{isWrong4 ? 'wrong': 'answer_btn'}">{selectedQuiz.answer4_3}</button>
       </div>
     </div>
 
