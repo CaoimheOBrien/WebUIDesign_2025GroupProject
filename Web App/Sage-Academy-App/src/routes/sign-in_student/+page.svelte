@@ -5,7 +5,7 @@
         console.log("Student Quiz Home Page Loaded");
     });
 
-    let email = ''; 
+    let email = '';
     let password = '';
     let isSubmitted = false;
 
