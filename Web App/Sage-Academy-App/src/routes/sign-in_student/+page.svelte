@@ -5,7 +5,7 @@
         console.log("Student Sign-In Loaded");
     });
 
-    let email = ''; 
+    let email = '';
     let password = '';
     let isSubmitted = false;
 
