@@ -1,33 +1,10 @@
-/* 
-    name: "____ Quiz",
-    content: "",
-    question1: "Question 1: ",
-    answer1_1: "",  
-    answer1_2: "",
-    answer1_3: "",
-
-    question2: "Question 2: ",
-    answer2_1: "", 
-    answer2_2: "",
-    answer2_3: "",
-
-    question3: "Question 3: ",
-    answer3_1: "",
-    answer3_2: "",
-    answer3_3: "",
-
-    question4: "Question 4: ",
-    answer4_1: "",
-    answer4_2: "", 
-    answer4_3: "",
-*/
-
+import { base } from '$app/paths';
 
 import { writable } from 'svelte/store';
 
 const designModule = {
     name: "Design Psych.",
-    image: "brain.png",
+    image: `${base}/brain.png`,
     alt: "brain",
 
     topics: [
@@ -153,7 +130,7 @@ const designModule = {
 
 const webUIModule = {
     name: "Web UI Design",
-    image: "computer.png",
+    image: `${base}/computer.png`,
     alt: "computer",
 
     topics: [
@@ -279,7 +256,7 @@ const webUIModule = {
 
 const UIProtoModule = {
     name: "UI Prototyping",
-    image: "prototype.png",
+    image: `${base}/prototype.png`,
     alt: "prototype",
 
     topics: [
@@ -402,7 +379,7 @@ const UIProtoModule = {
 
 const digitalArtModule = {
     name: "Digital Art",
-    image: "art.webp",
+    image: `${base}/art.webp`,
     alt: "art",
 
     topics: [

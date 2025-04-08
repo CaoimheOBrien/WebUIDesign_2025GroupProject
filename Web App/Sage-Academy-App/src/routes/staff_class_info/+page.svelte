@@ -1,7 +1,7 @@
 <script>
     import { onMount } from 'svelte';
     import { modules, addModule } from '$lib/moduleStore.js';
-
+    import { base } from '$app/paths';
 
     onMount(() => {
         console.log("Staff Class Info Loaded");
@@ -114,7 +114,7 @@ function handleSubmitModule() {
       {/each}
     </ul>
     <button on:click={handleAddModule} class="add-module-btn">
-      <img src="add.png" alt="add symbol"/>Add Module</button>
+      <img src="{base}/add.png" alt="add symbol"/>Add Module</button>
   </nav>
 
   {#if showAddModuleForm}

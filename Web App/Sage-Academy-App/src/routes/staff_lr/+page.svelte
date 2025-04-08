@@ -2,6 +2,8 @@
   import { onMount } from 'svelte';
   import { modules, addTopic } from '$lib/moduleStore.js';
   import { get } from 'svelte/store';
+  import { base } from '$app/paths';
+
   
   onMount(() => {
       console.log("Staff Learning Resource Loaded");

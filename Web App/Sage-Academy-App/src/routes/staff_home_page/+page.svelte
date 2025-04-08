@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte';
+    import { base } from '$app/paths';
 
     onMount(() => {
         console.log("Staff Home Page Loaded");
@@ -10,13 +11,13 @@
 
 <!-- Gallery Container -->
 <div class="gallery">
-    <button on:click={() => location.href = "/staff_quiz"}>
+    <button on:click={() => location.href = `${base}/staff_quiz`}>
         <h2>Quizzes</h2>
     </button>
-    <button on:click={() => location.href = "/staff_lr"}>
+    <button on:click={() => location.href = `${base}/staff_lr`}>
         <h2>Learning Resources</h2>
     </button>
-    <button on:click={() => location.href = "/staff_class_info"}>
+    <button on:click={() => location.href = `${base}/staff_lr`}>
         <h2>Class Information</h2>
     </button>
 </div>
