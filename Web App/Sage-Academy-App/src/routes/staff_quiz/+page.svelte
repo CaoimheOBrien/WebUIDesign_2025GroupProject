@@ -17,72 +17,28 @@
 	 */
   let selectedQuiz = null;
 
-  /*Each question gets their own isWrong and isRight variables*/
-  let isWrong1 = false; 
-  let isWrong2 = false; 
-  let isWrong3 = false; 
-  let isWrong4 = false; 
-
-  let isRight1 = false; 
-  let isRight2 = false; 
-  let isRight3 = false; 
-  let isRight4 = false; 
-
-  
   /**
 	 * @param {{ name: any; quizzes: any; } | null} module
 	 */
   function selectModule(module) {
   selectedModule = module;
   selectedQuiz = null;
-  resetAnswers();
 }
 
 	/**
 	 * @param {{ name: any; content: any; } | null} quizzes
 	 */
 function selectQuiz(quizzes) {
-      selectedQuiz = quizzes;
-  }
-  
-  function resetAnswers(){
-    isWrong1 = false; 
-    isWrong2 = false; 
-    isWrong3 = false; 
-    isWrong4 = false; 
-    isRight1 = false; 
-    isRight2 = false; 
-    isRight3 = false; 
-    isRight4 = false; 
+    selectedQuiz = quizzes;
   }
 
   function goBack() {
     selectedQuiz = null;
-    resetAnswers();
   }
 
 
   function goBackPage() {
-    resetAnswers(); 
-      window.history.back();
-  }
-
-  function showAnswer1(){
-    isWrong1 = true; 
-    isRight1 = true; 
-  }
-  function showAnswer2(){
-    isWrong2 = true; 
-    isRight2 = true; 
-
-  }
-  function showAnswer3(){
-    isWrong3 = true;
-    isRight3 = true; 
-  }
-  function showAnswer4(){
-    isWrong4 = true; 
-    isRight4 = true; 
+    window.history.back();
   }
 
 </script>

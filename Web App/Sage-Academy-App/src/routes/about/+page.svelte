@@ -1,6 +1,7 @@
 <script>
     import { onMount } from 'svelte';
-    
+    import { base } from '$app/paths';
+
     onMount(() => {
         console.log("About Page Loaded");
     });
@@ -14,7 +15,7 @@
 
 <div class="team-container">
     <div class="OurPics">
-        <img src="/caoimhe.jpg" id="caoimhe" alt="Caoimhe Profile">
+        <img src="{base}/caoimhe.jpg" id="caoimhe" alt="Caoimhe Profile">
         <h3>Caoimhe O'Brien</h3>
         <p>Hi I'm Caoimhe!</p>
         <p>I'm an enthusiastic studnet with an interest in UX/UI, web development and animation.</p>
@@ -22,7 +23,7 @@
     </div>
 
     <div class="OurPics">
-        <img src="/natalia.jpg" id="natalia" alt="Natalia Profile">
+        <img src="{base}/natalia.jpg" id="natalia" alt="Natalia Profile">
         <h3>Natalia Ryl</h3>
         <p>Hi I'm Natalia!</p>
         <p>I'm a creative at heart with a love for UI/UX, animation, and game development. </p>
@@ -30,7 +31,7 @@
     </div>
 
     <div class="OurPics">
-        <img src="/aoife.jpg" id="aoife" alt="Aoife Profile">
+        <img src="{base}/aoife.jpg" id="aoife" alt="Aoife Profile">
         <h3>Aoife Leahy</h3>
         <p>Hi, I'm Aoife!</p>
         <p>I'm passionate about animation, UI/UX Design and concept art. I love designing and bringing new characters to life.</p>
@@ -38,7 +39,7 @@
     </div>
 
     <div class="OurPics">
-        <img src="/lee.jpg" id="lee" alt="Lee Profile">
+        <img src="{base}/lee.jpg" id="lee" alt="Lee Profile">
         <h3>Lee Lindsay</h3>
         <p>Hi I'm Lee.</p> 
         <p>I love mixing technology with creativity. Whether it's making interactive designs or experimenting with digital art, I'm always excited to learn new ways to bring ideas to life. I enjoy staying inspired by the digital world around me.</p>
