@@ -1,0 +1,50 @@
+/* ===============================
+   Global Style with CSS Variables
+   =============================== */
+:root {
+    /* Color Variables */
+    --primary-color: rgba(129,193,34,1);
+    --secondary-color: #016618; /* for titles */
+    --background-color: #f9f9f9;
+    --text-color: #213547;
+
+    /* Font Variables */
+    --font-family: 'Nunito', sans-serif;
+    --base-font-size: 16px;
+
+    /* Spacing Variables */
+    --spacing-medium: 20px;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--base-font-size);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.5;
+    height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing-medium);
+}
