@@ -7,18 +7,17 @@
         console.log("Staff Class Info Loaded");
     });
 
-   
     let searchQuery = ""; // Search bar input
     let searchResult = ""; // number of students text
     let searchResult2 = ""; // no results text
     let searchResult3 = ""; // list of names bold
     let searchResult4 = ["1. Olivia Green", "2. Ethan Walker", "3. Isabella Carter", "4. Liam O'Neill", 
     "5. Sophia Davis", "6. Noah Scott", "7. Emma Clark", "8. Eric Johnson", "9. Ava Wilson", "10. Lucas Evans"]; // student names
-
-     /**
+    
+    /**
 	 * @type {{ name: string; image: string; alt: string; topics: { name: string; content: string; }[]; quizzes: { name: string; content: string; }[]; } | null}
 	 */
-   let selectedModule = null;
+    let selectedModule = null;
 
     let newModuleName = '';
     let showAddModuleForm = false; // Toggle the form visibility
@@ -44,7 +43,7 @@
 
     function goBackPage() {
         window.history.back();
-    } 
+    }
 
     function handleAddModule() {
         showAddModuleForm = true;
@@ -95,7 +94,7 @@ function handleSubmitModule() {
     }
 
      // Reset the "No results found" message when the user starts typing
-     function handleInputChange2() {
+    function handleInputChange2() {
         searchResult2 = "";
     }
 
@@ -131,15 +130,15 @@ function handleSubmitModule() {
   <div class="box">
     <button on:click={goBack} class="back-btn">← Back</button>
 
-     <!-- Search bar -->
-   <input
-   type="text"
-   bind:value={searchQuery}
-   placeholder="Search..."
-   on:keypress={handleKeyPress} 
-   on:input={handleInputChange}  
-   on:input={handleInputChange2}   
-/>
+    <!-- Search bar -->
+  <input
+    type="text"
+    bind:value={searchQuery}
+    placeholder="Search..."
+    on:keypress={handleKeyPress}
+    on:input={handleInputChange}
+    on:input={handleInputChange2}
+  />
 
     {#if searchResult}
     <p class = "search-result">{searchResult}</p>

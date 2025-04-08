@@ -2,7 +2,6 @@
   import { onMount } from 'svelte';
   import { modules, addTopic } from '$lib/moduleStore.js';
   import { get } from 'svelte/store';
-
   
   onMount(() => {
       console.log("Staff Learning Resource Loaded");
@@ -37,7 +36,7 @@
     else {
         alert('Please fill in all required fields.');
     }
-   }
+}
 
   /**
  * @param {{ name: string; image: string; alt: string; topics: { name: string; content: string; }[]; quizzes: { name: string; content: string; }[]; } | null | undefined} module

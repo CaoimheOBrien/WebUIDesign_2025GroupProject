@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
-
+    
     onMount(() => {
         console.log("About Page Loaded");
     });

@@ -1,7 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { modules } from '$lib/moduleStore.js';
-	import { redirect } from '@sveltejs/kit';
+	
 
   onMount(() => {
       console.log("Student Quizzes Loaded");

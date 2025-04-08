@@ -1,13 +1,14 @@
 <script>
     // import Navigation.svelte from lib folder
     import Navigation from '$lib/components/Navigation.svelte';
+    import { base } from '$app/paths'; 
 </script>
 
 
 <header>
     <!-- Logo -->
     <div class="logo">
-        <img src="/logo.jpg" alt="Website Logo">
+        <img src="{base}/logo.jpg" alt="Website Logo">
         <h1>Sage Academy</h1>
     </div>
 

@@ -63,6 +63,7 @@ function selectQuiz(quizzes) {
 
 
   function goBackPage() {
+    resetAnswers(); 
       window.history.back();
   }
 
