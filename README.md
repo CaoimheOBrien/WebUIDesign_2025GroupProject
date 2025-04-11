@@ -128,8 +128,17 @@ Created 'Back' buttons for all pages.
   2. Created the modal pop up that displays topics and content.
 
 Challenges faced and how they were solved:
+- The biggest challenge I had were with adding new topics/modules. 
+  I had no idea where to start, but thanks to Libor's help I was able to make that option fully functional.
+
+- I also didn't know how to approach our module/topic selection.
+  Again thanks to Libor's help, I knew where to go and how to do it.
 
 What was learned or improved during the process:
+- I learned how to style websites for responsiveness.
+- I now know how to make an interactive mavigation bar that has selections from each part. 
+  Eg, each module had its own topic which had its own content.
+- I know how to have a functional 'Add' button.
 
 
 #### Aoife Leahy (AoifeLeahy):
@@ -159,6 +168,7 @@ Challenges faced and how they were solved:
 - To fix this, I researched online an easier way to display them. I then changed the name to a string instead of a separate js file.
 
 What was learned or improved during the process:
+- I know how sveltekit works.
 - I learned how to insert a search bar and make it display only when I wanted to.
 - I gained more knowledge on inserting images, as I learned how to put an image into a button component.
 - My styling improved, as I styled lots of things in the website such as the navigation bar, etc.
