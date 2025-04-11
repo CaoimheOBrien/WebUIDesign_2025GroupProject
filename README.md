@@ -93,7 +93,7 @@ Main Homepage; Student Homepage; Staff Homepage;
         What was learned or improved during the process
 
     Aoife Leahy (AoifeLeahy):
-        Main contributions:
+    Main contributions:
         - Staff_class_info:
           1. Search bar
     
