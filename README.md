@@ -122,6 +122,9 @@ Main contributions:
     1. Wrote all the modules, topics and content.
     
 Challenges faced and how they were solved:
+- The display of names in the class info page proved difficult. This is because I tried to make them a separate js file first as I thought it would be easier to display all of them at once and to style all of them together.
+
+- To fix this, I researched online an easier way to display them. I then changed the name to a string instead of a separate js file.
 
 What was learned or improved during the process:
 
