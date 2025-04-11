@@ -82,44 +82,44 @@ Main Homepage; Student Homepage; Staff Homepage;
 # 👥 Team Contributions
 17. Each member should write a short reflection:
 
-    Caoimhe O'Brien (GitHub Username):
-        Main contributions (pages or components)
-        Challenges faced and how they were solved
-        What was learned or improved during the process
-
-    Natalia Ryl (NataliaRyl):
-        Main contributions (pages or components)
-        Challenges faced and how they were solved
-        What was learned or improved during the process
-
-    Aoife Leahy (AoifeLeahy):
-    Main contributions:
-        - Staff_class_info:
-          1. Search bar.
-          2. Navigation bar styling.
-
-        - Student_quiz:
-          1. All this page was completed by me, except implementing button functionality.
-
-        -Student_lr:
-          1. Navigation bar styling.
-          2. Researched topics and its content and implemented them into each module.
-
-        -Staff_home_page:
-          1. All this page was completed by me, except implementing button functionality.
-
-        -Staff_quiz:
-          1. All this page was completed by me, except implementing button functionality.
-
-        -Staff_lr:
-          1. Navigation bar styling.
-          2. Researched topics and its content and implemented them into each module.
-
-        -moduleStore.js
-          1. Wrote all the modules, topics and content.
-    
+Caoimhe O'Brien (GitHub Username):
+    Main contributions (pages or components)
     Challenges faced and how they were solved
     What was learned or improved during the process
+
+Natalia Ryl (NataliaRyl):
+    Main contributions (pages or components)
+    Challenges faced and how they were solved
+    What was learned or improved during the process
+
+Aoife Leahy (AoifeLeahy):
+Main contributions:
+    - Staff_class_info:
+    1. Search bar.
+    2. Navigation bar styling.
+
+    - Student_quiz:
+    1. All this page was completed by me, except implementing button functionality.
+
+    -Student_lr:
+    1. Navigation bar styling.
+    2. Researched topics and its content and implemented them into each module.
+
+    -Staff_home_page:
+    1. All this page was completed by me, except implementing button functionality.
+
+    -Staff_quiz:
+    1. All this page was completed by me, except implementing button functionality.
+
+    -Staff_lr:
+    1. Navigation bar styling.
+    2. Researched topics and its content and implemented them into each module.
+
+    -moduleStore.js
+    1. Wrote all the modules, topics and content.
+    
+Challenges faced and how they were solved
+What was learned or improved during the process
 
     Lee Lindsay (GitHub Username):
         Main contributions (pages or components)
