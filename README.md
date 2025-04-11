@@ -97,6 +97,7 @@ What was learned or improved during the process:
 #### Natalia Ryl (NataliaRyl):
 
 Main contributions:
+
 All responsiveness was done by me.
 Created 'Back' buttons for all pages.
 
