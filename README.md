@@ -139,14 +139,14 @@ Main contributions:
     1. Search bar.
     2. Navigation bar styling.
   - Student_quiz:
-    1. All this page layout was completed by me, except implementing button functionality and the actual quizzes.
+    1. All the page layout was completed by me, except implementing button functionality and the actual quizzes.
   - Student_lr:
     1. Navigation bar styling.
     2. Researched topics and its content and implemented them into each module.
   - Staff_home_page:
     1. All this page was completed by me, except implementing button functionality.
   - Staff_quiz:
-    1. All this page layout was completed by me, except implementing button functionality and the actual quizzes.
+    1. All the page layout was completed by me, except implementing button functionality and the actual quizzes.
   - Staff_lr:
     1. Navigation bar styling.
     2. Researched topics and its content and implemented them into each module.
