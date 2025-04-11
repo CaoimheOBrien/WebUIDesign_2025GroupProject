@@ -1,5 +1,7 @@
 <script>
     import { onMount } from 'svelte';
+    import { base } from '$app/paths';
+
 
     onMount(() => {
         console.log("Student Sign-In Loaded");
@@ -18,7 +20,7 @@
     isSubmitted = true;
 
     if (email && password) {
-        location.href = "/student_home_page";
+        location.href = `${base}/student_home_page1`;
     }
     else {
         alert('Please fill in all required fields.');

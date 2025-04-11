@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte';
+    import { base } from '$app/paths';
 
     onMount(() => {
         console.log("Staff Sign-In Loaded");
