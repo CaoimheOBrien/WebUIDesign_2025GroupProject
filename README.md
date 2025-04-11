@@ -35,16 +35,13 @@ Design Goals:
 User Needs:
 - Provide both college students and lecturers a chance at improved learning opportunities
 - Easy access to students’ progress in quizzes and marks for lectures
-- Enables the users to access different pages depending on if the user used the staff sign in 
-or the student sign in
-- Simple set up for lecturers to setup their own notes to be accessed in the learning resource 
-section 
+- Enables the users to access different pages depending on if the user used the staff sign in or the student sign in
+- Simple set up for lecturers to setup their own notes to be accessed in the learning resource section 
 - Intuitive access to quizzes for students and lectures
 
   
 7. Brief summary of research insights or personas used:
-We created 4 User Personas to represent different demographics of potential users, we had; ​
-  
+We created 4 User Personas to represent different demographics of potential users, we had; ​ 
 - a lecturer in their mid-40s who is not familiar with newer technologies, ​
 - a student who is a first-time user of the website, ​
 - a young lecturer who suffers from a lack of engagement from students, ​
@@ -66,20 +63,41 @@ Main Homepage; Student Homepage; Staff Homepage;
 - Interactive quizzes
 
 
-11. Note responsiveness and accessibility efforts (e.g. mobile layout, alt text, colour contrast)
+10. Note responsiveness and accessibility efforts (e.g. mobile layout, alt text, colour contrast)
 - All images have an alt text.
 - As the screen gets smaller, the navigation bar turns into a burger menu
-- 
+- Buttons which were horizontally stacked become vertically stacked
+- Module navigation bar, which is vertical and on side of page, gets stacked horizonatlly at the top of page
+- Logo and name moves to middle of header for visual purposes
+- Module selection modal displays underneath the navigation bar instead of on its right
 
 # 🛠️ Technologies Used
 11. Svelte.js
 12. HTML/CSS/JS
-13. Other tools (Figma, GitHub, etc.)
+13. Penpot - design wireframes, sitemaps, user flows
+14. Github - stores our repository
+15. Warp - used some help for responsiveness
+16. ChatGPT - used to create content for quizzes & student names
 
 # 👥 Team Contributions
-14. Each member should write a short reflection:
+17. Each member should write a short reflection:
 
-    Name (GitHub Username):
+    Caoimhe O'Brien (GitHub Username):
+        Main contributions (pages or components)
+        Challenges faced and how they were solved
+        What was learned or improved during the process
+
+    Natalia Ryl (NataliaRyl):
+        Main contributions (pages or components)
+        Challenges faced and how they were solved
+        What was learned or improved during the process
+
+    Aoife Leahy (GitHub Username):
+        Main contributions (pages or components)
+        Challenges faced and how they were solved
+        What was learned or improved during the process
+
+    Lee Lindsay (GitHub Username):
         Main contributions (pages or components)
         Challenges faced and how they were solved
         What was learned or improved during the process
