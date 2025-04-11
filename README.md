@@ -92,8 +92,11 @@ Main Homepage; Student Homepage; Staff Homepage;
         Challenges faced and how they were solved
         What was learned or improved during the process
 
-    Aoife Leahy (GitHub Username):
-        Main contributions (pages or components)
+    Aoife Leahy (AoifeLeahy):
+        Main contributions:
+        - Staff_class_info:
+          1. Search bar
+    
         Challenges faced and how they were solved
         What was learned or improved during the process
 
