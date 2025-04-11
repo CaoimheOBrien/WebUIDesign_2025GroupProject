@@ -20,7 +20,7 @@
     isSubmitted = true;
 
     if (email && password) {
-        location.href = `${base}/student_home_page1`;
+        location.href = `${base}/student_home_page`;
     }
     else {
         alert('Please fill in all required fields.');
