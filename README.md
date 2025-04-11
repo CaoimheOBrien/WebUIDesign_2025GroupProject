@@ -21,7 +21,8 @@ Members:
 - With our website, we wanted to create an app which focuses on enhancing student experience while also giving educators a platform to communicate and assess their students. 
 - Our website integrates interactive features to allow for resource sharing. This space fosters a dynamic and supportive learning environment, ensuring students receive the resources that they need to succeed.
 
-6. Key design goals and user needs identified
+6. Key design goals and user needs identified:
+
 Design Goals:
 - Sign in/Sign out 
 - Create quiz/ manage quizzes 
@@ -39,7 +40,13 @@ or the student sign in
 section 
 - Intuitive access to quizzes for students and lectures
   
-7. Brief summary of research insights or personas used
+7. Brief summary of research insights or personas used:
+- We created 4 User Personas to represent different demographics of potential users, we had; ​
+  
+- a lecturer in their mid-40s who is not familiar with newer technologies, ​
+- a student who is a first-time user of the website, ​
+- a young lecturer who suffers from a lack of engagement from students, ​
+- a university administrator who often finds it difficult to find and utilise the necessary tools as educational interfaces often cater towards students or educators. ​
 
 # 🔧 Key Features
 8. List core pages
