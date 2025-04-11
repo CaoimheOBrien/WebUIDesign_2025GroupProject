@@ -1,20 +1,24 @@
-## WebUIDesign_2025GroupProject
+# WebUIDesign_2025GroupProject
 This is the repository for our group project.
 
-Members: 
+## Members: 
 - Caoimhe O'Brien (C00297178)
 - Lee Lindsay (C00300670)
 - Aoife Leahy (C00296873)
 - Natalia Ryl (C00294480) 
 
 # 🧾 Project Title and Summary
-1. Name: Sage Academy
+### 1. Name:
+Sage Academy
   
-2. Purpose: The main purpose of our website is to be used as an educational tool to be used by college students and their lecturers, using our websites intuitive quizzes and learning resources to get a greater grasp on their education.​
+### 2. Purpose:
+The main purpose of our website is to be used as an educational tool to be used by college students and their lecturers, using our websites intuitive quizzes and learning resources to get a greater grasp on their education.​
    
-3. Audience: University Students; Lecturers; Administrators
-   
-4. Live Site: [Link to GitHub Pages deployment]
+### 3. Audience:
+University Students; Lecturers; Administrators
+
+### 4. Live Site:
+[Link to GitHub Pages deployment]
 
 # 🧠 Design Rationale
 5. Why did you choose this theme/topic?
