@@ -35,7 +35,7 @@ Design Goals:
 - Learning resources 
 - Track academic progress
 
-### User Needs:
+User Needs:
 - Provide both college students and lecturers a chance at improved learning opportunities
 - Easy access to students’ progress in quizzes and marks for lectures
 - Enables the users to access different pages depending on if the user used the staff sign in or the student sign in
@@ -97,6 +97,34 @@ What was learned or improved during the process:
 #### Natalia Ryl (NataliaRyl):
 
 Main contributions:
+All responsiveness was done by me.
+Created 'Back' buttons for all pages.
+
+- Footer.svelte: 
+  1. Basic layout was from the svelte tutorial. 
+  2. Remaining code was all me.
+- Header.svelte: 
+  1. Basic layout was from the svelte tutorial. 
+  2. Remaining code was all me.
+- Navigation.svelte: 
+  1. Basic layout was from the svelte tutorial. 
+  2. Remaining code was all me.
+- moduleStore.js: 
+  1. This file was fully created by me with the help of Libor. 
+  2. The rest just added proper written content to it.
+- about: 
+  1. This file was fully created by me.
+- staff_class_info: 
+  1. Added a functional navigation bar. 
+  2. Created the modal pop up  that displays the search bar. 
+  3. Created a functional 'Add Module' option.
+- staff_lr:
+  1. Added a functional navigation bar. 
+  2. Created the modal pop up that displays topics and content. 
+  3. Created a functional 'Add Topic' option.
+- student_lr:
+  1. Added a functional navigation bar. 
+  2. Created the modal pop up that displays topics and content.
 
 Challenges faced and how they were solved:
 
