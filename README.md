@@ -83,14 +83,14 @@ Main Homepage; Student Homepage; Staff Homepage;
 17. Each member should write a short reflection:
 
 Caoimhe O'Brien (GitHub Username):
-    Main contributions (pages or components)
-    Challenges faced and how they were solved
-    What was learned or improved during the process
+Main contributions (pages or components)
+Challenges faced and how they were solved
+What was learned or improved during the process
 
 Natalia Ryl (NataliaRyl):
-    Main contributions (pages or components)
-    Challenges faced and how they were solved
-    What was learned or improved during the process
+Main contributions (pages or components)
+Challenges faced and how they were solved
+What was learned or improved during the process
 
 Aoife Leahy (AoifeLeahy):
 
@@ -116,10 +116,10 @@ Main contributions:
 Challenges faced and how they were solved
 What was learned or improved during the process
 
-    Lee Lindsay (GitHub Username):
-        Main contributions (pages or components)
-        Challenges faced and how they were solved
-        What was learned or improved during the process
+Lee Lindsay (GitHub Username):
+Main contributions (pages or components)
+Challenges faced and how they were solved
+What was learned or improved during the process
 
 # 🚀 Deployment Notes
 15. GitHub Pages URL
