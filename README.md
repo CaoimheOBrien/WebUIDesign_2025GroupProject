@@ -9,8 +9,11 @@ Members:
 
 # 🧾 Project Title and Summary
 1. Name: Sage Academy
-2. Purpose: What problem does it solve or what user need does it address?
-3. Audience: Who is it for?
+  
+2. Purpose: The main purpose of our website is to be used as an educational tool to be used by college students and their lecturers, using our websites intuitive quizzes and learning resources to get a greater grasp on their education.​
+   
+3. Audience: University Students; Lecturers; Administrators
+   
 4. Live Site: [Link to GitHub Pages deployment]
 
 # 🧠 Design Rationale
@@ -19,13 +22,28 @@ Members:
   Our website integrates interactive features to allow for resource sharing. This space fosters a dynamic and supportive learning environment, ensuring students receive the resources that they need to succeed.
 
 6. Key design goals and user needs identified
+• Sign in/Sign out 
+• Create quiz/ manage quizzes 
+• Take quiz 
+• Multiple modules 
+• Learning resources 
+• Track academic progress
+
+• Provide both college students and lecturers a chance at improved learning opportunities
+• Easy access to students’ progress in quizzes and marks for lectures
+• Enables the users to access different pages depending on if the user used the staff sign in 
+or the student sign in
+• Simple set up for lecturers to setup their own notes to be accessed in the learning resource 
+section 
+• Intuitive access to quizzes for students and lectures
   
 7. Brief summary of research insights or personas used
 
 # 🔧 Key Features
-8. List core pages (e.g. Homepage, About, Contact, etc.)
-9. Highlight dynamic or interactive elements (e.g. search, gallery, forms)
-10. Note responsiveness and accessibility efforts (e.g. mobile layout, alt text, colour contrast)
+8. List core pages
+   Main Homepage; Student Homepage; Staff Homepage; 
+10. Highlight dynamic or interactive elements (e.g. search, gallery, forms)
+11. Note responsiveness and accessibility efforts (e.g. mobile layout, alt text, colour contrast)
 
 # 🛠️ Technologies Used
 11. Svelte.js
