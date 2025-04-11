@@ -87,18 +87,19 @@ Main Homepage; Student Homepage; Staff Homepage;
 
 #### Caoimhe O'Brien (CaoimheOBrien):
 
-Main contributions:
+**Main contributions:**
 
-Challenges faced and how they were solved:
+**Challenges faced and how they were solved:**
 
-What was learned or improved during the process:
+**What was learned or improved during the process:**
 
 
 #### Natalia Ryl (NataliaRyl):
 
-Main contributions:
+**Main contributions:**
 
 All responsiveness was done by me.
+
 Created 'Back' buttons for all pages.
 
 - Footer.svelte: 
@@ -127,14 +128,14 @@ Created 'Back' buttons for all pages.
   1. Added a functional navigation bar. 
   2. Created the modal pop up that displays topics and content.
 
-Challenges faced and how they were solved:
+**Challenges faced and how they were solved:**
 - The biggest challenge I had were with adding new topics/modules. 
   I had no idea where to start, but thanks to Libor's help I was able to make that option fully functional.
 
 - I also didn't know how to approach our module/topic selection.
   Again thanks to Libor's help, I knew where to go and how to do it.
 
-What was learned or improved during the process:
+**What was learned or improved during the process:**
 - I learned how to style websites for responsiveness.
 - I now know how to make an interactive mavigation bar that has selections from each part. 
   Eg, each module had its own topic which had its own content.
@@ -143,7 +144,7 @@ What was learned or improved during the process:
 
 #### Aoife Leahy (AoifeLeahy):
 
-Main contributions:
+**Main contributions:**
   - Staff_class_info:
     1. Search bar.
     2. Navigation bar styling.
@@ -162,12 +163,12 @@ Main contributions:
   - moduleStore.js
     1. Wrote all the modules, topics and content.
     
-Challenges faced and how they were solved:
+**Challenges faced and how they were solved:**
 - The display of names in the class info page proved difficult. This is because I tried to make them a separate js file first as I thought it would be easier to display all of them at once and to style all of them together.
 
 - To fix this, I researched online an easier way to display them. I then changed the name to a string instead of a separate js file.
 
-What was learned or improved during the process:
+**What was learned or improved during the process:**
 - I know how sveltekit works.
 - I learned how to insert a search bar and make it display only when I wanted to.
 - I gained more knowledge on inserting images, as I learned how to put an image into a button component.
@@ -176,18 +177,33 @@ What was learned or improved during the process:
 
 #### Lee Lindsay (LeeLindsaySetu / Solomiya-Datskiv (for some reason this happens all the time)):
 
-Main contributions:
+**Main contributions:**
 
-Challenges faced and how they were solved:
+**Challenges faced and how they were solved:**
 
-What was learned or improved during the process:
+**What was learned or improved during the process:**
 
 
 # 🚀 Deployment Notes
 ### 15. GitHub Pages URL
+
+
 ### 16. Any deployment issues and how they were resolved
 
 # 🔄 Reflections & Next Steps
 ### 17. What went well in the project
+Our teamwork and time management was very good when completing this assignemnt/website. 
+The majority of the group worked well together as we could easily split up each of the pages between all of us without any coflict. 
+If we had any problems with some aspects of the website, we were all very happy to help each other and give some feedback.
+Our team worked together to make sure the website had consistent styling and layout.
+
+
 ### 18. What could be improved
+The biggest takeaway from this project is the importance of not overloading the project with difficult features. 
+Focusing on key features help to maintain quality and avoids any of the team members becoming overwhelmed.
+Another important takeaway would be clear communication and well-defined goals. 
+
 ### 19. One suggestion for future development
+If we were to do this project again, I think we would make our goals more realistic with the features that we wish to include. ​
+Since we are not utilising databases, some of the features that some of the more complex features we originally planned were not feasible without the necessary backend infrastructure. ​
+By scaling down our feature set and focusing on the core functionality, we could ensure a realistic and more polished final product. ​
