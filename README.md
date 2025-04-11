@@ -127,7 +127,10 @@ Challenges faced and how they were solved:
 - To fix this, I researched online an easier way to display them. I then changed the name to a string instead of a separate js file.
 
 What was learned or improved during the process:
-
+- I learned how to insert a search bar and make it display only when I wanted to.
+- I gained more knowledge on inserting images, as I learned how to put an image into a button component.
+- My styling improved, as I styled lots of things in the website such as the navigation bar, etc.
+- My understanding of how to use svelte improved also.
 
 Lee Lindsay (LeeLindsaySetu / Solomiya-Datskiv (for some reason this happens all the time)):
 
