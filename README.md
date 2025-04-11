@@ -21,13 +21,12 @@ University Students; Lecturers; Administrators
 [Link to GitHub Pages deployment]
 
 # 🧠 Design Rationale
-5. Why did you choose this theme/topic?
+### 5. Why did you choose this theme/topic?
 - With our website, we wanted to create an app which focuses on enhancing student experience while also giving educators a platform to communicate and assess their students. 
 - Our website integrates interactive features to allow for resource sharing. This space fosters a dynamic and supportive learning environment, ensuring students receive the resources that they need to succeed.
 
 
-6. Key design goals and user needs identified:
-
+### 6. Key design goals and user needs identified:
 Design Goals:
 - Sign in/Sign out 
 - Create quiz/ manage quizzes 
@@ -36,7 +35,7 @@ Design Goals:
 - Learning resources 
 - Track academic progress
 
-User Needs:
+### User Needs:
 - Provide both college students and lecturers a chance at improved learning opportunities
 - Easy access to students’ progress in quizzes and marks for lectures
 - Enables the users to access different pages depending on if the user used the staff sign in or the student sign in
@@ -44,7 +43,7 @@ User Needs:
 - Intuitive access to quizzes for students and lectures
 
   
-7. Brief summary of research insights or personas used:
+### 7. Brief summary of research insights or personas used:
 We created 4 User Personas to represent different demographics of potential users, we had; ​ 
 - a lecturer in their mid-40s who is not familiar with newer technologies, ​
 - a student who is a first-time user of the website, ​
@@ -52,11 +51,11 @@ We created 4 User Personas to represent different demographics of potential user
 - a university administrator who often finds it difficult to find and utilise the necessary tools as educational interfaces often cater towards students or educators. ​
 
 # 🔧 Key Features
-8. List core pages:
+### 8. List core pages:
 Main Homepage; Student Homepage; Staff Homepage;
 
 
-9. Highlight dynamic or interactive elements:
+### 9. Highlight dynamic or interactive elements:
 - Navigation buttons
 - Interactive & responsive navigation bar (burger menu when screen is smaller)
 - Forms
@@ -67,7 +66,7 @@ Main Homepage; Student Homepage; Staff Homepage;
 - Interactive quizzes
 
 
-10. Note responsiveness and accessibility efforts (e.g. mobile layout, alt text, colour contrast)
+### 10. Note responsiveness and accessibility efforts (e.g. mobile layout, alt text, colour contrast)
 - All images have an alt text.
 - As the screen gets smaller, the navigation bar turns into a burger menu
 - Buttons which were horizontally stacked become vertically stacked
@@ -84,18 +83,9 @@ Main Homepage; Student Homepage; Staff Homepage;
 16. ChatGPT - used to create content for quizzes & student names
 
 # 👥 Team Contributions
-17. Each member should write a short reflection:
+### 17. Each member should write a short reflection:
 
-Caoimhe O'Brien (CaoimheOBrien):
-
-Main contributions:
-
-Challenges faced and how they were solved:
-
-What was learned or improved during the process:
-
-
-Natalia Ryl (NataliaRyl):
+#### Caoimhe O'Brien (CaoimheOBrien):
 
 Main contributions:
 
@@ -104,7 +94,16 @@ Challenges faced and how they were solved:
 What was learned or improved during the process:
 
 
-Aoife Leahy (AoifeLeahy):
+#### Natalia Ryl (NataliaRyl):
+
+Main contributions:
+
+Challenges faced and how they were solved:
+
+What was learned or improved during the process:
+
+
+#### Aoife Leahy (AoifeLeahy):
 
 Main contributions:
   - Staff_class_info:
@@ -136,7 +135,7 @@ What was learned or improved during the process:
 - My styling improved, as I styled lots of things in the website such as the navigation bar, etc.
 - My understanding of how to use svelte improved also.
 
-Lee Lindsay (LeeLindsaySetu / Solomiya-Datskiv (for some reason this happens all the time)):
+#### Lee Lindsay (LeeLindsaySetu / Solomiya-Datskiv (for some reason this happens all the time)):
 
 Main contributions:
 
@@ -146,10 +145,10 @@ What was learned or improved during the process:
 
 
 # 🚀 Deployment Notes
-15. GitHub Pages URL
-16. Any deployment issues and how they were resolved
+### 15. GitHub Pages URL
+### 16. Any deployment issues and how they were resolved
 
 # 🔄 Reflections & Next Steps
-17. What went well in the project
-18. What could be improved
-19. One suggestion for future development
+### 17. What went well in the project
+### 18. What could be improved
+### 19. One suggestion for future development
