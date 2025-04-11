@@ -82,15 +82,23 @@ Main Homepage; Student Homepage; Staff Homepage;
 # 👥 Team Contributions
 17. Each member should write a short reflection:
 
-Caoimhe O'Brien (GitHub Username):
-Main contributions (pages or components)
-Challenges faced and how they were solved
-What was learned or improved during the process
+Caoimhe O'Brien (CaoimheOBrien):
+
+Main contributions:
+
+Challenges faced and how they were solved:
+
+What was learned or improved during the process:
+
 
 Natalia Ryl (NataliaRyl):
-Main contributions (pages or components)
-Challenges faced and how they were solved
-What was learned or improved during the process
+
+Main contributions:
+
+Challenges faced and how they were solved:
+
+What was learned or improved during the process:
+
 
 Aoife Leahy (AoifeLeahy):
 
@@ -113,13 +121,19 @@ Main contributions:
   - moduleStore.js
     1. Wrote all the modules, topics and content.
     
-Challenges faced and how they were solved
-What was learned or improved during the process
+Challenges faced and how they were solved:
 
-Lee Lindsay (GitHub Username):
-Main contributions (pages or components)
-Challenges faced and how they were solved
-What was learned or improved during the process
+What was learned or improved during the process:
+
+
+Lee Lindsay (LeeLindsaySetu / Solomiya-Datskiv (for some reason this happens all the time)):
+
+Main contributions:
+
+Challenges faced and how they were solved:
+
+What was learned or improved during the process:
+
 
 # 🚀 Deployment Notes
 15. GitHub Pages URL
