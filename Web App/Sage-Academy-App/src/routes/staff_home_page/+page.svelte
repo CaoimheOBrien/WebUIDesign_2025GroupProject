@@ -17,7 +17,7 @@
     <button on:click={() => location.href = `${base}/staff_lr`}>
         <h2>Learning Resources</h2>
     </button>
-    <button on:click={() => location.href = `${base}/staff_lr`}>
+    <button on:click={() => location.href = `${base}/staff_class_info`}>
         <h2>Class Information</h2>
     </button>
 </div>
