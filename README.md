@@ -21,6 +21,7 @@ Members:
 - With our website, we wanted to create an app which focuses on enhancing student experience while also giving educators a platform to communicate and assess their students. 
 - Our website integrates interactive features to allow for resource sharing. This space fosters a dynamic and supportive learning environment, ensuring students receive the resources that they need to succeed.
 
+
 6. Key design goals and user needs identified:
 
 Design Goals:
@@ -39,9 +40,10 @@ or the student sign in
 - Simple set up for lecturers to setup their own notes to be accessed in the learning resource 
 section 
 - Intuitive access to quizzes for students and lectures
+
   
 7. Brief summary of research insights or personas used:
-- We created 4 User Personas to represent different demographics of potential users, we had; ​
+We created 4 User Personas to represent different demographics of potential users, we had; ​
   
 - a lecturer in their mid-40s who is not familiar with newer technologies, ​
 - a student who is a first-time user of the website, ​
@@ -49,10 +51,25 @@ section
 - a university administrator who often finds it difficult to find and utilise the necessary tools as educational interfaces often cater towards students or educators. ​
 
 # 🔧 Key Features
-8. List core pages
-   Main Homepage; Student Homepage; Staff Homepage; 
-10. Highlight dynamic or interactive elements (e.g. search, gallery, forms)
+8. List core pages:
+Main Homepage; Student Homepage; Staff Homepage;
+
+
+9. Highlight dynamic or interactive elements:
+- Navigation buttons
+- Interactive & responsive navigation bar (burger menu when screen is smaller)
+- Forms
+- Search bar
+- Add topic/
+- Add module
+- Back buttons for each selection
+- Interactive quizzes
+
+
 11. Note responsiveness and accessibility efforts (e.g. mobile layout, alt text, colour contrast)
+- All images have an alt text.
+- As the screen gets smaller, the navigation bar turns into a burger menu
+- 
 
 # 🛠️ Technologies Used
 11. Svelte.js
