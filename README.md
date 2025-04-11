@@ -18,24 +18,24 @@ Members:
 
 # 🧠 Design Rationale
 5. Why did you choose this theme/topic?
-  With our website, we wanted to create an app which focuses on enhancing student experience while also giving educators a platform to communicate and assess their students. 
-  Our website integrates interactive features to allow for resource sharing. This space fosters a dynamic and supportive learning environment, ensuring students receive the resources that they need to succeed.
+-With our website, we wanted to create an app which focuses on enhancing student experience while also giving educators a platform to communicate and assess their students. 
+Our website integrates interactive features to allow for resource sharing. This space fosters a dynamic and supportive learning environment, ensuring students receive the resources that they need to succeed.
 
 6. Key design goals and user needs identified
-• Sign in/Sign out 
-• Create quiz/ manage quizzes 
-• Take quiz 
-• Multiple modules 
-• Learning resources 
-• Track academic progress
+- Sign in/Sign out 
+- Create quiz/ manage quizzes 
+- Take quiz 
+- Multiple modules 
+- Learning resources 
+- Track academic progress
 
-• Provide both college students and lecturers a chance at improved learning opportunities
-• Easy access to students’ progress in quizzes and marks for lectures
-• Enables the users to access different pages depending on if the user used the staff sign in 
+- Provide both college students and lecturers a chance at improved learning opportunities
+- Easy access to students’ progress in quizzes and marks for lectures
+- Enables the users to access different pages depending on if the user used the staff sign in 
 or the student sign in
-• Simple set up for lecturers to setup their own notes to be accessed in the learning resource 
+- Simple set up for lecturers to setup their own notes to be accessed in the learning resource 
 section 
-• Intuitive access to quizzes for students and lectures
+- Intuitive access to quizzes for students and lectures
   
 7. Brief summary of research insights or personas used
 
