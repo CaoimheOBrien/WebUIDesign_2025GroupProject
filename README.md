@@ -88,11 +88,35 @@ Main Homepage; Student Homepage; Staff Homepage;
 #### Caoimhe O'Brien (CaoimheOBrien):
 
 **Main contributions:**
+- Contact Page:
+	i. Created the ContactCard component
+	ii. All this page was completed by me, except for header/ navigation layout.
+- Staff Sign-in 
+	i. All this page was completed by me, except for header/ navigation layout.
+- Student Sign-in
+	i. All this page was completed by me, except for header/ navigation layout.
+- Staff Quiz
+	i. Styled and created the content for each of the quizzes.
+	ii. Implemented button functionality.
+- Student Quiz
+	i. Styled and created the content for each of the quizzes.
+	ii. Implemented button functionality.
+	iii. Implemented the user feedback. 
+- ModuleStore.js
+	i. I created all the quiz content and answers.
+- Live page deployment
+  i. I handled everything to do with the deployment. 
 
 **Challenges faced and how they were solved:**
+- **Required Form Fields*: At first I found it hard to create required form fields that were functional. This is because I just used the "required" element. To fix this, I added the "bind:value" element to each of the input elements. 
+
+-**Questions on Quizzes*: Originally, we wanted to have a different page for each of the questions but then we realised that would take up either too many if statements or too many pages. To fix this, I reviewed our designs and decided to make all of our questions on the same page. 
 
 **What was learned or improved during the process:**
-
+- I learned how to create interactive forms. 
+- I deepened my understanding of conditional formatting and dynamic pages/ elements in javascript. 
+- I learned how to utilise svelteKit and similar modern javascript frameworks.
+- I can also now deploy js projects through GitHub. 
 
 #### Natalia Ryl (NataliaRyl):
 
@@ -186,9 +210,12 @@ Created 'Back' buttons for all pages.
 
 # 🚀 Deployment Notes
 ### 15. GitHub Pages URL
-
+https://caoimheobrien.github.io/WebUIDesign_2025GroupProject/ 
 
 ### 16. Any deployment issues and how they were resolved
+The main issues with deployment was to do with the routing and working through GitHub. At first, I used the wrong quotation marks for the {base} element but I didn't realise so I askedd my lecturer for assitance and they corrected one page so I could do the rest.
+
+I also had to deal with issues with git merges and git pulls/pushes. Originally the page wouldn't deploy due to issues in the build which then affected the git bash. I fixed these issues and tried to push but it didn't work. I had to work through git merge issues and consult my lecturer's notes. 
 
 # 🔄 Reflections & Next Steps
 ### 17. What went well in the project
